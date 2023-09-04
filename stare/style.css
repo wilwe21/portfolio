@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'comic';
+  src: url(comicsans.ttf)
+}
+@font-face{
+  font-family: 'font';
+  src: url(Death.otf)
+}
+@font-face{
+  font-family: 'ubuntu';
+  src url(Ubuntu.ttf);
+}
+body {
+  background-color: #000000;
+}
+.main {
+  display: grid;
+  grid-template:
+    "info info info info"
+    "kurwa kurwa kurwa kurwa"
+    "ad art art art"
+    "stopa stopa stopa stopa";
+}
+.info {
+  grid-area: info;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  cursor: url(icon.png), auto;
+  justify-content: center;
+}
+.pijesz{
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-family: 'font', 'ubuntu';
+  background: -webkit-linear-gradient(#fff000, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.kurwad {grid-area: kurwa;}
+.ad {grid-area: ad;}
+.article {grid-area: art;}
+.stopa {grid-area: stopa;}
+.kurwa {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.letter {
+  transition: 0.4s;
+  transform: translatex(0);
+  cursor: grab;
+  color: #fff000;
+  font-size: 82px;
+  font-family: 'comic', 'ubuntu'; 
+}
+.letter:hover {
+  transform: translatey(-1rem);
+  background: -webkit-linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letterd {
+  transition: 0.4s;
+  transform: translatex(0);
+  cursor: grab;
+  color: #fff000;
+  font-size: 82px;
+  font-family: 'comic', 'ubuntu'; 
+}
+.letterd:hover {
+  transform: matrix(2, 1, 3, 7, 6, 9);
+  background: -webkit-linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.letterdc {
+  transition: 0.4s;
+  transform: translatex(0);
+  cursor: grab;
+  color: #fff000;
+  font-size: 82px;
+  font-family: 'comic'; 
+}
+.letterdc:hover {
+  transform: rotate(0.5turn) translatey(20px);
+  background: -webkit-linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pasta {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  word-spacing: 10px;
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-family: 'font', 'ubuntu';
+  background: -webkit-linear-gradient(#ff0000, #3f0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ad > img {
+  width: clamp(50px, 100%, 300px);;
+  align-items: left;
+}
+.borda {
+  font-size: 50px;
+  color: #fff000;
+  font-family: 'font', 'ubuntu';
+}
