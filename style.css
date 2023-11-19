@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'comic';
-  src: url(comicsans.ttf)
+  src: url(./stare/comicsans.ttf)
 }
 body {
   background-color: #000000;
@@ -13,12 +13,12 @@ body {
     "wow wow wow"
     "sex dupa cycki"
     "sex dupa cycki";
-  font-family: 'comic';
 }
 .sad {
   display: flex;
   padding: 20px;
   gap: 50px;
+  font-family: 'comic';
 }
 .sex {
   grid-area: sex;
@@ -33,4 +33,5 @@ body {
   grid-area: wow;
   font-size: 69;
   text-align: center;
+  font-family: 'comic';
 }
