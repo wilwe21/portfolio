@@ -18,14 +18,9 @@
   font-family: "roboto";
   src: url(../fonts/roboto.ttf);
 }
-@font-face {
-  font-family: "Hack";
-  src: url(../fonts/HackNerdFont.ttf);
-}
 body {
   background-color: #181825;
   color: #CDD6F4;
-  font-family: Roboto;
 }
 
 .box {
@@ -40,81 +35,84 @@ br {
 }
 
 .start {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
+  font-family: Roboto;
+  background: linear-gradient(to right, black, #222234, #181825);
   margin: 10px;
   margin-top: 5px;
-  padding: 7px;
-  background: linear-gradient(to right, #490d91, #222234, #181825);
   max-width: 150px;
   grid-area: start;
+  padding: 7px;
   text-align: start;
 }
 
 .start-middle {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   word-wrap: break-word;
   max-width: 150px;
-  background: linear-gradient(to right, #490d91, #222234, #181825);
+  background: linear-gradient(to right, black, #222234, #181825);
+  font-family: Roboto;
+  margin: 10px;
+  margin-top: 5px;
   grid-area: start-middle;
+  padding: 7px;
   text-align: start;
 }
 
 .center {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
+  font-family: Roboto;
+  min-width: 300px;
   margin: 10px;
   margin-top: 5px;
-  padding: 7px;
-  min-width: 300px;
   grid-area: center;
+  padding: 7px;
   text-align: center;
 }
 
 .center-middle {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   word-wrap: break-word;
+  font-family: Roboto;
   min-width: 400px;
   min-height: 300px;
+  margin: 10px;
+  margin-top: 5px;
   grid-area: center-middle;
-  text-align: center;
+  padding: 7px;
   display: flex;
 }
 
 .end {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
+  font-family: Roboto;
+  background: linear-gradient(to left, black, #222234, #181825);
   margin: 10px;
   margin-top: 5px;
-  padding: 7px;
-  background: linear-gradient(to left, #490d91, #222234, #181825);
   max-width: 150px;
   grid-area: end;
+  padding: 7px;
   text-align: end;
 }
 
 .end-middle {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   display: end;
-  background: linear-gradient(to left, #490d91, #222234, #181825);
+  background: linear-gradient(to left, black, #222234, #181825);
+  font-family: Roboto;
   margin: 10px;
   max-width: 150px;
   margin-top: 5px;
   grid-area: end-middle;
+  padding: 7px;
   text-align: end;
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
 }
 
@@ -138,11 +136,8 @@ br {
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
   background-position: center;
@@ -153,7 +148,7 @@ br {
   background-size: 300px;
 }
 .dots:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
+  box-shadow: inset 0 0 0 2px #fff000;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
@@ -164,8 +159,8 @@ br {
 }
 .dots:active, .dots.on, .dots.active, .dots:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
+  background-image: linear-gradient(to right, #fff000, #999000);
+  background-color: #fff000;
   color: #181825;
 }
 .dots:active:hover, .dots.on:hover, .dots.active:hover, .dots:checked:hover {
@@ -185,11 +180,8 @@ br {
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
   background-position: center;
@@ -199,7 +191,7 @@ br {
   background-image: url("../images/mine.png");
 }
 .mine:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
+  box-shadow: inset 0 0 0 2px #fff000;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
@@ -210,8 +202,8 @@ br {
 }
 .mine:active, .mine.on, .mine.active, .mine:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
+  background-image: linear-gradient(to right, #fff000, #999000);
+  background-color: #fff000;
   color: #181825;
 }
 .mine:active:hover, .mine.on:hover, .mine.active:hover, .mine:checked:hover {
@@ -231,11 +223,8 @@ br {
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
   background-position: center;
@@ -245,7 +234,7 @@ br {
   background-image: url("../images/szach.png");
 }
 .szach:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
+  box-shadow: inset 0 0 0 2px #fff000;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
@@ -256,8 +245,8 @@ br {
 }
 .szach:active, .szach.on, .szach.active, .szach:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
+  background-image: linear-gradient(to right, #fff000, #999000);
+  background-color: #fff000;
   color: #181825;
 }
 .szach:active:hover, .szach.on:hover, .szach.active:hover, .szach:checked:hover {
@@ -277,11 +266,8 @@ br {
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
   background-position: center;
@@ -291,7 +277,7 @@ br {
   background-image: url("../images/bush.png");
 }
 .bush:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
+  box-shadow: inset 0 0 0 2px #fff000;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
@@ -302,8 +288,8 @@ br {
 }
 .bush:active, .bush.on, .bush.active, .bush:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
+  background-image: linear-gradient(to right, #fff000, #999000);
+  background-color: #fff000;
   color: #181825;
 }
 .bush:active:hover, .bush.on:hover, .bush.active:hover, .bush:checked:hover {
@@ -323,11 +309,8 @@ br {
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  border: 2px solid #CBA6F7;
+  border: 2px solid #fff000;
   border-radius: 7px;
-  margin: 10px;
-  margin-top: 5px;
-  padding: 7px;
   text-shadow: 2px 2px 0px #000000;
   background-image: url("../images/bash.png");
   background-repeat: no-repeat;
@@ -337,7 +320,7 @@ br {
   grid-area: bash;
 }
 .bash:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
+  box-shadow: inset 0 0 0 2px #fff000;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
@@ -348,8 +331,8 @@ br {
 }
 .bash:active, .bash.on, .bash.active, .bash:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
+  background-image: linear-gradient(to right, #fff000, #999000);
+  background-color: #fff000;
   color: #181825;
 }
 .bash:active:hover, .bash.on:hover, .bash.active:hover, .bash:checked:hover {
@@ -361,4 +344,4 @@ br {
   color: rgba(205, 214, 244, 0.3);
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css,.map */

@@ -1,6 +1,7 @@
 body{
 	background-color: $bg-color;
 	color: $fg-color;
+	font-family: $font;
 }
 .box{
 	display: grid;
@@ -15,13 +16,9 @@ br {
 }
 .start{
 	@include border;
-	font-family: $font;
 	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
-	margin: $spacing*2;
-	margin-top: $spacing;
 	max-width: 150px;
 	grid-area: start;
-	padding: $padding;
 	text-align: start;
 }
 .start-middle{
@@ -29,57 +26,39 @@ br {
 	word-wrap: break-word;
 	max-width: 150px;
 	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
-	font-family: $font;
-	margin: $spacing*2;
-	margin-top: $spacing;
 	grid-area: start-middle;
-	padding: $padding;
 	text-align: start;
 }
 .center{
 	@include border;
-	font-family: $font;
 	min-width: 300px;
-	margin: $spacing*2;
-	margin-top: $spacing;
 	grid-area: center;
-	padding: $padding;
 	text-align: center;
 }
 .center-middle{
 	@include border;
 	word-wrap: break-word;
-	font-family: $font;
 	min-width: 400px;
 	min-height: 300px;
-	margin: $spacing*2;
-	margin-top: $spacing;
 	grid-area: center-middle;
-	padding: $padding;
-	//text-align: center;
+	text-align: center;
 	display: flex;
 }
 .end{
 	@include border;
-	font-family: $font;
 	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
-	margin: $spacing*2;
-	margin-top: $spacing;
 	max-width: 150px;
 	grid-area: end;
-	padding: $padding;
 	text-align: end;
 }
 .end-middle{
 	@include border;
 	display: end;
 	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
-	font-family: $font;
 	margin: $spacing*2;
 	max-width: 150px;
 	margin-top: $spacing;
 	grid-area: end-middle;
-	padding: $padding;
 	text-align: end;
 	border: $border-width solid $accent;
 	border-radius: $radii;

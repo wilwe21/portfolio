@@ -1,0 +1,42 @@
+body{
+	background-color: $bg-color;
+	color: $fg-color;
+	font-family: $font;
+}
+.topbar{
+	display: grid;
+	grid-template-columns: 150px auto 150px; 
+  	grid-template-areas: 'start center end';
+}
+.back{
+	@include link;
+	@include border;
+	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	max-width: 150px;
+	grid-area: start;
+	text-align: start;
+}
+.name{
+	@include border;
+	min-width: 300px;
+	grid-area: center;
+	text-align: center;
+}
+.placeholder{
+	@include border;
+	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	max-width: 150px;
+	grid-area: end;
+	text-align: end;
+}
+.content{
+	@include border;
+	min-height: 400px;
+	br {
+		margin-top: -40px;
+	}
+}
+.code{
+	@include border;
+	padding: 0px;
+}

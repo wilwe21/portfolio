@@ -1,4 +1,7 @@
 @mixin border() {
 	border: $border-width solid $accent;
 	border-radius: $radii;
+	margin: $spacing*2;
+	margin-top: $spacing;
+	padding: $padding;
 }
