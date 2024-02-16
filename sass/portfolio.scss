@@ -15,7 +15,7 @@
 	margin: $spacing*2;
 	grid-area: dots;
 	background-image: url('../images/dots.png');
-	background-size: 300px;
+	background-size: 500px;
 }
 .mine{
 	@include button;
@@ -27,6 +27,7 @@
 	margin: $spacing*2;
 	grid-area: mine;
 	background-image: url('../images/mine.png');
+	background-size: 500px;
 }
 .szach{
 	@include button;
@@ -38,6 +39,7 @@
 	margin: $spacing*2;
 	grid-area: szach;
 	background-image: url('../images/szach.png');
+	background-size: 500px;
 }
 .bush{
 	@include button;
@@ -49,6 +51,7 @@
 	margin: $spacing*2;
 	grid-area: bush;
 	background-image: url('../images/bush.png');
+	background-size: 500px;
 }
 .bash{
 	@include button;
@@ -60,4 +63,5 @@
 	padding: $padding;
 	margin: $spacing*2;
 	grid-area: bash;
+	background-size: 500px;
 }

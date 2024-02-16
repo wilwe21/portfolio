@@ -94,4 +94,10 @@ body {
   padding: 0px;
 }
 
+.link {
+  all: unset;
+  cursor: pointer;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=scriptstyle.css.map */

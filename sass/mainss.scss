@@ -42,3 +42,7 @@ body{
 	background: #0D1117;
 	padding: 0px;
 }
+.link{
+	@include link;
+	padding: 10px;
+}
