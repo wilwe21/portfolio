@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "concert";
+  src: url(../fonts/ConcertOne.ttf);
+}
+@font-face {
+  font-family: "mononoki";
+  src: url(../fonts/mononoki.ttf);
+}
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/rubik.ttf);
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url(../fonts/ubuntu.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/roboto.ttf);
+}
+body {
+  background-color: #181825;
+  color: #CDD6F4;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-areas: "start center end" "start-middle center-middle end-middle";
+}
+
+br {
+  display: block;
+  margin: 3px 0;
+}
+
+.start {
+  font-family: Roboto;
+  background: linear-gradient(to right, #490d91, #222234, #181825);
+  margin: 10px;
+  margin-top: 5px;
+  max-width: 150px;
+  grid-area: start;
+  padding: 7px;
+  text-align: start;
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+}
+
+.start-middle {
+  word-wrap: break-word;
+  max-width: 150px;
+  background: linear-gradient(to right, #490d91, #222234, #181825);
+  font-family: Roboto;
+  margin: 10px;
+  margin-top: 5px;
+  grid-area: start-middle;
+  padding: 7px;
+  text-align: start;
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+}
+
+.center {
+  font-family: Roboto;
+  min-width: 300px;
+  margin: 10px;
+  margin-top: 5px;
+  grid-area: center;
+  padding: 7px;
+  text-align: center;
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+}
+
+.center-middle {
+  flex-grow: 1;
+  word-wrap: break-word;
+  font-family: Roboto;
+  min-width: 400px;
+  min-height: 300px;
+  margin: 10px;
+  margin-top: 5px;
+  grid-area: center-middle;
+  padding: 7px;
+  text-align: center;
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+}
+
+.end {
+  font-family: Roboto;
+  background: linear-gradient(to left, #490d91, #222234, #181825);
+  margin: 10px;
+  margin-top: 5px;
+  max-width: 150px;
+  grid-area: end;
+  padding: 7px;
+  text-align: end;
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+}
+
+.end-middle {
+  display: end;
+  background: linear-gradient(to left, #490d91, #222234, #181825);
+  font-family: Roboto;
+  margin: 10px;
+  max-width: 150px;
+  margin-top: 5px;
+  grid-area: end-middle;
+  padding: 7px;
+  text-align: end;
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+}
+
+.link {
+  all: unset;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

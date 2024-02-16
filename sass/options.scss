@@ -1,0 +1,31 @@
+$spacing: 5px;
+$padding: 7px;
+$radii: 7px;
+$font: Roboto;
+$bg-color: #181825;
+$fg-color: #CDD6F4;
+$accent-fg: $bg-color;
+$accent: #CBA6F7;
+$border-color: $fg-color;
+$border-opacity: 100;
+$border-width: 2px;
+$widget-bg: $fg-color;
+$widget-opacity: 94;
+$shadow: rgba(0, 0, 0, .6);
+$transition: 200ms;
+$accent-gradient: to right, $accent, darken($accent, 20);
+$accent-bgradient: to bottom, $accent, darken($accent, 20);
+
+$br-size: 3px;
+
+$hover: transparentize($widget-bg, ($widget-opacity * 0.9) / 100);
+$widget-bg: transparentize($widget-bg, $widget-opacity / 100);
+$active-gradient: linear-gradient($accent-gradient);
+$active-bgradient: linear-gradient($accent-bgradient);
+
+$hover-fg: lighten($fg-color, 10%);
+
+$border-color: transparentize($border-color, $border-opacity / 100);
+$border: $border-width solid $border-color;
+
+$text-shadow: 2px 2px 2px $shadow;

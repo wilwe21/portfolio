@@ -1,0 +1,94 @@
+body{
+	background-color: $bg-color;
+	color: $fg-color;
+}
+.box{
+	display: grid;
+	grid-template-columns: 150px auto 150px; 
+  	grid-template-areas: 
+  	'start center end'
+  	'start-middle center-middle end-middle';
+}
+br {
+   display: block;
+   margin: $br-size 0;
+}
+.start{
+	font-family: $font;
+	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	margin: $spacing*2;
+	margin-top: $spacing;
+	max-width: 150px;
+	grid-area: start;
+	padding: $padding;
+	text-align: start;
+	border: $border-width solid $accent;
+	border-radius: $radii;
+}
+.start-middle{
+	word-wrap: break-word;
+	max-width: 150px;
+	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	font-family: $font;
+	margin: $spacing*2;
+	margin-top: $spacing;
+	grid-area: start-middle;
+	padding: $padding;
+	text-align: start;
+	border: $border-width solid $accent;
+	border-radius: $radii;
+}
+.center{
+	font-family: $font;
+	min-width: 300px;
+	margin: $spacing*2;
+	margin-top: $spacing;
+	grid-area: center;
+	padding: $padding;
+	text-align: center;
+	border: $border-width solid $accent;
+	border-radius: $radii;
+}
+.center-middle{
+	flex-grow: 1;
+	word-wrap: break-word;
+	font-family: $font;
+	min-width: 400px;
+	min-height: 300px;
+	margin: $spacing*2;
+	margin-top: $spacing;
+	grid-area: center-middle;
+	padding: $padding;
+	text-align: center;
+	border: $border-width solid $accent;
+	border-radius: $radii;
+}
+.end{
+	font-family: $font;
+	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	margin: $spacing*2;
+	margin-top: $spacing;
+	max-width: 150px;
+	grid-area: end;
+	padding: $padding;
+	text-align: end;
+	border: $border-width solid $accent;
+	border-radius: $radii;
+}
+.end-middle{
+	display: end;
+	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	font-family: $font;
+	margin: $spacing*2;
+	max-width: 150px;
+	margin-top: $spacing;
+	grid-area: end-middle;
+	padding: $padding;
+	text-align: end;
+	border: $border-width solid $accent;
+	border-radius: $radii;
+}
+.link{
+	@include link;
+	padding: 10px;
+}
