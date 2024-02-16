@@ -32,11 +32,13 @@ body{
 .content{
 	@include border;
 	min-height: 400px;
+	background: linear-gradient(90deg,darken($accent, 50), lighten($bg-color,5), $bg-color, $bg-color, $bg-color, $bg-color, $bg-color, lighten($bg-color,5),darken($accent, 50));
 	br {
 		margin-top: -40px;
 	}
 }
 .code{
 	@include border;
+	background: #0D1117;
 	padding: 0px;
 }

@@ -78,6 +78,7 @@ body {
   margin-top: 5px;
   padding: 7px;
   min-height: 400px;
+  background: linear-gradient(90deg, #490d91, #222234, #181825, #181825, #181825, #181825, #181825, #222234, #490d91);
 }
 .content br {
   margin-top: -40px;
@@ -89,6 +90,7 @@ body {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  background: #0D1117;
   padding: 0px;
 }
 
