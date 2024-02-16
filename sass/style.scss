@@ -18,7 +18,9 @@
   font-family: 'roboto';
   src: url(../fonts/roboto.ttf);
 }
-@import './options.scss';
-@import './button.scss';
-@import './link.scss';
-@import './main.scss';
+@import './options';
+@import './button';
+@import './border';
+@import './link';
+@import './main';
+@import './portfolio';

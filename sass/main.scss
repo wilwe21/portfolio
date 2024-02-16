@@ -14,6 +14,7 @@ br {
    margin: $br-size 0;
 }
 .start{
+	@include border;
 	font-family: $font;
 	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
 	margin: $spacing*2;
@@ -22,10 +23,9 @@ br {
 	grid-area: start;
 	padding: $padding;
 	text-align: start;
-	border: $border-width solid $accent;
-	border-radius: $radii;
 }
 .start-middle{
+	@include border;
 	word-wrap: break-word;
 	max-width: 150px;
 	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
@@ -35,10 +35,9 @@ br {
 	grid-area: start-middle;
 	padding: $padding;
 	text-align: start;
-	border: $border-width solid $accent;
-	border-radius: $radii;
 }
 .center{
+	@include border;
 	font-family: $font;
 	min-width: 300px;
 	margin: $spacing*2;
@@ -46,11 +45,9 @@ br {
 	grid-area: center;
 	padding: $padding;
 	text-align: center;
-	border: $border-width solid $accent;
-	border-radius: $radii;
 }
 .center-middle{
-	flex-grow: 1;
+	@include border;
 	word-wrap: break-word;
 	font-family: $font;
 	min-width: 400px;
@@ -59,11 +56,11 @@ br {
 	margin-top: $spacing;
 	grid-area: center-middle;
 	padding: $padding;
-	text-align: center;
-	border: $border-width solid $accent;
-	border-radius: $radii;
+	//text-align: center;
+	display: flex;
 }
 .end{
+	@include border;
 	font-family: $font;
 	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
 	margin: $spacing*2;
@@ -72,10 +69,9 @@ br {
 	grid-area: end;
 	padding: $padding;
 	text-align: end;
-	border: $border-width solid $accent;
-	border-radius: $radii;
 }
 .end-middle{
+	@include border;
 	display: end;
 	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
 	font-family: $font;

@@ -28,6 +28,7 @@
     transition: $transition;
     border-radius: $radii;
     color: $fg-color;
+    cursor: pointer;
 
     @if $flat{
         background-color: transparent;
