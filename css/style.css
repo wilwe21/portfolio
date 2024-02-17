@@ -121,7 +121,6 @@ br {
 .link {
   all: unset;
   cursor: pointer;
-  padding: 10px;
 }
 
 .projects {
@@ -132,6 +131,7 @@ br {
 
 .dots {
   all: unset;
+  background: url("../images/dots.png");
   transition: 200ms;
   color: #CDD6F4;
   cursor: pointer;
@@ -172,6 +172,7 @@ br {
 
 .mine {
   all: unset;
+  background: url("../images/mine.png");
   transition: 200ms;
   color: #CDD6F4;
   cursor: pointer;
@@ -212,6 +213,7 @@ br {
 
 .szach {
   all: unset;
+  background: url("../images/szach.png");
   transition: 200ms;
   color: #CDD6F4;
   cursor: pointer;
@@ -252,6 +254,7 @@ br {
 
 .bush {
   all: unset;
+  background: url("../images/bush.png");
   transition: 200ms;
   color: #CDD6F4;
   cursor: pointer;
@@ -292,6 +295,7 @@ br {
 
 .bash {
   all: unset;
+  background: url("../images/bash.png");
   transition: 200ms;
   color: #CDD6F4;
   cursor: pointer;
@@ -303,7 +307,6 @@ br {
   margin-top: 5px;
   padding: 7px;
   text-shadow: 2px 2px 0px #000000;
-  background-image: url("../images/bash.png");
   background-repeat: no-repeat;
   background-position: center;
   padding: 7px;

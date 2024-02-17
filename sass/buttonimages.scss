@@ -26,8 +26,9 @@
 	color: transparentize($fg-color, 0.7);
 }
 
-@mixin buttonimages($image: '../images/dots.png',$flat: false, $reactive: true, $focusable: false){
+@mixin buttonimages($image: '../images/null.png',$flat: false, $reactive: true, $focusable: false){
 	all: unset;
+	background: url($image);
 	transition: $transition;
 	color: $fg-color;
 	cursor: pointer;

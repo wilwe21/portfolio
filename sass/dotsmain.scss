@@ -3,10 +3,15 @@ body{
 	color: $fg-color;
 	font-family: $font;
 }
-.topbar{
+br {
+   display: block;
+   margin: $br-size 0;
+}
+.content{
 	display: grid;
 	grid-template-columns: 150px auto 150px; 
-  	grid-template-areas: 'start center end';
+  	grid-template-areas: 'start center end'
+  			     'nav con con';
 }
 .back{
 	@include button;
@@ -29,19 +34,24 @@ body{
 	grid-area: end;
 	text-align: end;
 }
-.content{
-	@include border;
-	min-height: 400px;
-	background: linear-gradient(90deg,darken($accent, 50), lighten($bg-color,5), $bg-color, $bg-color, $bg-color, $bg-color, $bg-color, lighten($bg-color,5),darken($accent, 50));
-	br {
-		margin-top: -40px;
-	}
-}
-.code{
-	@include border;
-	background: #0D1117;
-	padding: 0px;
-}
 .link{
 	@include link;
+}
+.nav{
+	@include border;
+	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	grid-area: nav;
+}
+.con{
+	@include border;
+	grid-area: con;
+	text-align: left;
+	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color, $bg-color, $bg-color);
+}
+.lt{
+	text-decoration-line: line-through;
+	display: inline-block;
+}
+.line{
+	display: inline-block;
 }
