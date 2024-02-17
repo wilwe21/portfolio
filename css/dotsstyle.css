@@ -212,7 +212,7 @@ br {
 }
 
 .quicksettings {
-  min-height: 200px;
+  min-height: 450px;
   background: url("../images/widgets/quicksettings.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -220,7 +220,7 @@ br {
 }
 
 .dashboard {
-  min-height: 200px;
+  min-height: 350px;
   background: url("../images/widgets/dashboard.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -228,7 +228,7 @@ br {
 }
 
 .applauncher {
-  min-height: 200px;
+  min-height: 350px;
   background: url("../images/widgets/applauncher.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@ br {
 }
 
 .powermenu {
-  min-height: 200px;
+  min-height: 350px;
   background: url("../images/widgets/powermenu.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -244,7 +244,7 @@ br {
 }
 
 .music {
-  min-height: 200px;
+  min-height: 250px;
   background: url("../images/widgets/music.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -252,7 +252,7 @@ br {
 }
 
 .media {
-  min-height: 100px;
+  min-height: 150px;
   background: url("../images/widgets/media.png");
   background-size: contain;
   background-repeat: no-repeat;
