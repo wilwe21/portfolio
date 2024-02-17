@@ -6,50 +6,60 @@ const about = () => {
 const macchiato = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>Catppuccin Macchiato</h1></br>\
-  	<div class='macchiato'></div>"
+  	<div class='macchiato'></div>\
+  	<h3>Main Theme that i think look the best<h3>"
 }
 const latte = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>Catppuccin Latte</h1></br>\
-  	<div class='latte'></div>"
+  	<div class='latte'></div>\
+  	<h3>Light theme that use a deer-fox wallpaper</h3>"
 }
 const spaghett = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>Flying Spaghetti Monster</h1></br>\
-  	<div class='spaghett'></div>"
+  	<div class='spaghett'></div>\
+  	<h3>Best religion ever</h3>"
 }
 const mlp = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>My Little Pony</h1></br>\
-  	<div class='mlp'></div>"
+  	<div class='mlp'></div>\
+  	<h3>Pony in a jar</h3>"
 }
 const pacman = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>Pacman</h1></br>\
-  	<div class='pacman'></div>"
+  	<div class='pacman'></div>\
+  	<h3>Pacman in space. Windows borders look like a pacman maze</h3>"
 }
 const weirdmagedon = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>Weirdmagedon</h1></br>\
-  	<div class='wg'></div>"
+  	<div class='wg'></div>\
+  	<h3>Theme inspired by Gravity Falls weirdmagedon</h3>"
 }
 const kgb = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>The Land of Mushrooms</h1></br>\
-  	<div class='kgb'></div>"
+  	<div class='kgb'></div>\
+  	<h3>Awesome look to a mushroom land. the moon show actual moon phase</h3>"
 }
 const jp2 = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>John Paul II</h1></br>\
-  	<div class='jp'></div>"
+  	<div class='jp'></div>\
+  	<h3>O panie to ty na mnie spojrzałeś</h3>"
 }
 const fnaf = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>Freaddy FNAF</h1></br>\
-  	<div class='fnaf'></div>"
+  	<div class='fnaf'></div>\
+  	<h3>Freddy FNAF. Freddy nose work as intended</h3>"
 }
 const fuck = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>Fucked Up</h1></br>\
-  	<div class='fuck'></div>"
+  	<div class='fuck'></div>\
+  	<h3>My name is UI designer</h3>"
 }
