@@ -1,7 +1,7 @@
 const about = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>My Aylurs gtk shell config</h1></br>\
-  	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div> to look and work that i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others</div>"
+  	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div>. Configured to look and work as i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others</div>"
 }
 const macchiato = () => {
   	document.getElementById("con").innerHTML = "\
@@ -62,4 +62,22 @@ const fuck = () => {
   	<h1>Fucked Up</h1></br>\
   	<div class='fuck'></div>\
   	<h3>My name is UI designer</h3>"
+}
+const widgets = () => {
+	document.getElementById('con').innerHTML = "\
+	<div class='center'>\
+	<h1>Widgets</h2>\
+	<h3>Quicksettings</h3>\
+	<div class='quicksettings'></div>\
+	<h3>DashBoard</h3>\
+	<div class='dashboard'></div>\
+	<h3>AppLauncher</h3>\
+	<div class='applauncher'></div>\
+	<h3>Power Menu</h3>\
+	<div class='powermenu'></div>\
+	<h3>Music Widget</h3>\
+	<div class='music'></div>\
+	<h3>Media indicator</h3>\
+	<div class='media'></div>\
+	</div>"
 }
