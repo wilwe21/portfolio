@@ -9,7 +9,7 @@ body{
   	grid-template-areas: 'start center end';
 }
 .back{
-	@include link;
+	@include button;
 	@include border;
 	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
 	max-width: 150px;

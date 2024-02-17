@@ -133,7 +133,6 @@ br {
 .dots {
   all: unset;
   transition: 200ms;
-  border-radius: 7px;
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
@@ -152,11 +151,6 @@ br {
   background-image: url("../images/dots.png");
   background-size: 500px;
 }
-.dots:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
-  background-color: rgba(205, 214, 244, 0.154);
-  color: #f7f8fd;
-}
 .dots:hover {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
   background-color: rgba(205, 214, 244, 0.154);
@@ -164,12 +158,11 @@ br {
 }
 .dots:active, .dots.on, .dots.active, .dots:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
-  color: #181825;
-}
-.dots:active:hover, .dots.on:hover, .dots.active:hover, .dots:checked:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0), inset 0 0 0 99px rgba(205, 214, 244, 0.154);
+  background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/dots.png") no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  color: #CDD6F4;
 }
 .dots:disabled {
   box-shadow: none;
@@ -180,7 +173,6 @@ br {
 .mine {
   all: unset;
   transition: 200ms;
-  border-radius: 7px;
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
@@ -199,11 +191,6 @@ br {
   background-image: url("../images/mine.png");
   background-size: 500px;
 }
-.mine:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
-  background-color: rgba(205, 214, 244, 0.154);
-  color: #f7f8fd;
-}
 .mine:hover {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
   background-color: rgba(205, 214, 244, 0.154);
@@ -211,12 +198,11 @@ br {
 }
 .mine:active, .mine.on, .mine.active, .mine:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
-  color: #181825;
-}
-.mine:active:hover, .mine.on:hover, .mine.active:hover, .mine:checked:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0), inset 0 0 0 99px rgba(205, 214, 244, 0.154);
+  background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/mine.png") no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  color: #CDD6F4;
 }
 .mine:disabled {
   box-shadow: none;
@@ -227,7 +213,6 @@ br {
 .szach {
   all: unset;
   transition: 200ms;
-  border-radius: 7px;
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
@@ -246,11 +231,6 @@ br {
   background-image: url("../images/szach.png");
   background-size: 500px;
 }
-.szach:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
-  background-color: rgba(205, 214, 244, 0.154);
-  color: #f7f8fd;
-}
 .szach:hover {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
   background-color: rgba(205, 214, 244, 0.154);
@@ -258,12 +238,11 @@ br {
 }
 .szach:active, .szach.on, .szach.active, .szach:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
-  color: #181825;
-}
-.szach:active:hover, .szach.on:hover, .szach.active:hover, .szach:checked:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0), inset 0 0 0 99px rgba(205, 214, 244, 0.154);
+  background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/szach.png") no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  color: #CDD6F4;
 }
 .szach:disabled {
   box-shadow: none;
@@ -274,7 +253,6 @@ br {
 .bush {
   all: unset;
   transition: 200ms;
-  border-radius: 7px;
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
@@ -293,11 +271,6 @@ br {
   background-image: url("../images/bush.png");
   background-size: 500px;
 }
-.bush:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
-  background-color: rgba(205, 214, 244, 0.154);
-  color: #f7f8fd;
-}
 .bush:hover {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
   background-color: rgba(205, 214, 244, 0.154);
@@ -305,12 +278,11 @@ br {
 }
 .bush:active, .bush.on, .bush.active, .bush:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
-  color: #181825;
-}
-.bush:active:hover, .bush.on:hover, .bush.active:hover, .bush:checked:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0), inset 0 0 0 99px rgba(205, 214, 244, 0.154);
+  background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/bush.png") no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  color: #CDD6F4;
 }
 .bush:disabled {
   box-shadow: none;
@@ -321,7 +293,6 @@ br {
 .bash {
   all: unset;
   transition: 200ms;
-  border-radius: 7px;
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
@@ -340,11 +311,6 @@ br {
   grid-area: bash;
   background-size: 500px;
 }
-.bash:focus {
-  box-shadow: inset 0 0 0 2px #CBA6F7;
-  background-color: rgba(205, 214, 244, 0.154);
-  color: #f7f8fd;
-}
 .bash:hover {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
   background-color: rgba(205, 214, 244, 0.154);
@@ -352,12 +318,11 @@ br {
 }
 .bash:active, .bash.on, .bash.active, .bash:checked {
   box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
-  color: #181825;
-}
-.bash:active:hover, .bash.on:hover, .bash.active:hover, .bash:checked:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0), inset 0 0 0 99px rgba(205, 214, 244, 0.154);
+  background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/bash.png") no-repeat top center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  color: #CDD6F4;
 }
 .bash:disabled {
   box-shadow: none;

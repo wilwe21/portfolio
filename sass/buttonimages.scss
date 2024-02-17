@@ -1,29 +1,32 @@
-@mixin button-focus() {
+@mixin buttonimg-focus() {
     	box-shadow: inset 0 0 0 $border-width $accent;
 	background-color: $hover;
     	color: $hover-fg;
 }
 
-@mixin button-hover() {
+@mixin buttonimg-hover() {
     	box-shadow: inset 0 0 0 $border-width $border-color;
     	background-color: $hover;
     	color: $hover-fg;
 }
 
-@mixin button-active() {
+@mixin buttonimg-active($bg) {
     	box-shadow: inset 0 0 0 $border-width $border-color;
-    	background-image: $active-gradient;
-    	background-color: $accent;
-    	color: $accent-fg;
+    	//background: linear-gradient(transparentize($accent, 0.5)), url($bg);
+    	background: linear-gradient(transparentize(darken($accent, 20), 0.2),transparentize(darken($accent, 20), 0.2)), url($bg) no-repeat top center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 500px;
+    	color: $fg-color;
 }
 
-@mixin button-disabled() {
+@mixin buttonimg-disabled() {
 	box-shadow: none;
 	background-color: transparent;
 	color: transparentize($fg-color, 0.7);
 }
 
-@mixin button($flat: false, $reactive: true, $focusable: false){
+@mixin buttonimages($image: '../images/dots.png',$flat: false, $reactive: true, $focusable: false){
 	all: unset;
 	transition: $transition;
 	color: $fg-color;
@@ -40,17 +43,17 @@
     	@if $reactive{
     		@if $focusable {
 			&:focus{
-				@include button-focus;
+				@include buttonimg-focus;
 			}
 		}
 		&:hover{
-			@include button-hover;
+			@include buttonimg-hover;
 		}
 		&:active, &.on, &.active, &:checked {
-			@include button-active;
+			@include buttonimg-active($image);
 		}
 	}
 	&:disabled {
-        	@include button-disabled;
+        	@include buttonimg-disabled;
     	}
 }

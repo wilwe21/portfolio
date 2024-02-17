@@ -36,7 +36,11 @@ body {
 
 .back {
   all: unset;
+  transition: 200ms;
+  color: #CDD6F4;
   cursor: pointer;
+  background-color: rgba(205, 214, 244, 0.06);
+  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -46,6 +50,22 @@ body {
   max-width: 150px;
   grid-area: start;
   text-align: start;
+}
+.back:hover {
+  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  background-color: rgba(205, 214, 244, 0.154);
+  color: #f7f8fd;
+}
+.back:active, .back.on, .back.active, .back:checked {
+  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
+  background-color: #CBA6F7;
+  color: #181825;
+}
+.back:disabled {
+  box-shadow: none;
+  background-color: transparent;
+  color: rgba(205, 214, 244, 0.3);
 }
 
 .name {
