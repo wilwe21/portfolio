@@ -131,4 +131,84 @@ br {
   display: inline-block;
 }
 
+.macchiato {
+  min-height: 500px;
+  background: url("../images/conf/macchiato.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.latte {
+  min-height: 500px;
+  background: url("../images/conf/latte.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.spaghett {
+  min-height: 500px;
+  background: url("../images/conf/spaghett.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mlp {
+  min-height: 500px;
+  background: url("../images/conf/mlp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pacman {
+  min-height: 500px;
+  background: url("../images/conf/pacman.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wg {
+  min-height: 500px;
+  background: url("../images/conf/wg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.kgb {
+  min-height: 500px;
+  background: url("../images/conf/kgb.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jp {
+  min-height: 500px;
+  background: url("../images/conf/jp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fnaf {
+  min-height: 500px;
+  background: url("../images/conf/fnaf.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fuck {
+  min-height: 500px;
+  background: url("../images/conf/fuck.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*# sourceMappingURL=dotsstyle.css.map */
