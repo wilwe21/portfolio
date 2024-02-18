@@ -1,7 +1,7 @@
 const about = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>My Aylurs gtk shell config</h1></br>\
-  	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div>. Configured to look and work as i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others</div>"
+  	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div>. Configured to look and work as i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others. I'm creating it to be as customizable as possible.</div>"
 };
 const macchiato = () => {
   	document.getElementById("con").innerHTML = "\
@@ -25,7 +25,7 @@ const mlp = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>My Little Pony</h1></br>\
   	<div class='mlp'></div>\
-  	<h3>Pony in a jar</h3>"
+  	<h3>Pony in a jar, lyra plush or smth i don't watch series</h3>"
 };
 const pacman = () => {
   	document.getElementById("con").innerHTML = "\
@@ -49,7 +49,7 @@ const jp2 = () => {
   	document.getElementById("con").innerHTML = "\
   	<h1>John Paul II</h1></br>\
   	<div class='jp'></div>\
-  	<h3>O panie to ty na mnie spojrzałeś</h3>"
+  	<h3>The Lord once stood by the shore, He was looking for people ready to follow Him; To catch hearts With the truth of God's words. Ref: O Lord, it is you who have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 2 I am a poor man, My treasure is my hands ready To work with you And a pure heart. Ref: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 3 You, you need my hands, ♪ My heart that's young and fervent ♪ My drops of sweat And loneliness. Ref: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 4. Today we set sail together To catch hearts on the seas of human souls With the net of your truth And the word of life. Ref.: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today</h3>"
 };
 const fnaf = () => {
   	document.getElementById("con").innerHTML = "\
