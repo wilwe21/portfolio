@@ -66,19 +66,25 @@ const fuck = () => {
 const widgets = () => {
 	document.getElementById('con').innerHTML = "\
 	<div class='center'>\
-	<h1>Widgets</h2>\
+	<h1>Widgets</h1>\
 	<h3>Quicksettings</h3>\
 	<div class='quicksettings'></div>\
+	<h4>Quick setup to adjust volume, brightness, wifi and theme</h4></br>\
 	<h3>DashBoard</h3>\
 	<div class='dashboard'></div>\
+	<h4>Shows notifications and calendar with current weather</h4></br>\
 	<h3>AppLauncher</h3>\
 	<div class='applauncher'></div>\
+	<h4>Show apps and media player or avatar with sentence</h4></br>\
 	<h3>Power Menu</h3>\
 	<div class='powermenu'></div>\
+	<h4>Quick setup to turn off or reboot</h4></br>\
 	<h3>Music Widget</h3>\
 	<div class='music'></div>\
+	<h4>Show media player on top of full screen and you can change the volume</h4></br>\
 	<h3>Media indicator</h3>\
 	<div class='media'></div>\
+	<h4>Showing every time while video has changed</h4></br>\
 	</div>"
 };
 const shorts = () => {
