@@ -148,8 +148,107 @@ const shorts = () => {
 const desk = () => {
 	document.getElementById('name').innerHTML = "Desktop Widgets"
 	document.getElementById('con').innerHTML = "\
+	<div class='center'>\
 	<h3>Clock</h3>\
+	<a class='link' onclick='clockopt()'>Configurable options</a></br>\
+	<div class='clock'></div>\
 	<h3>Media Player</h3>\
+	<a class='link' onclick='medplopt()'>Configurable options</a></br>\
+	<div class='play'></div>\
+	<h3>Moon widget</h3>\
+	<a class='link' onclick='moonopt()'>Configurable options</a></br>\
+	<div class='moon'></div>\
 	<h3>Top layer</h3>\
-	<h3>Sound Button</h3>"
+	<a class='link' onclick='tplopt()'>Configurable options</a></br>\
+	<h3>Sound Button</h3>\
+	<a class='link' onclick='sbopt()'>Configurable options</a></br>\
+	</div>"
 };
+const clockopt = () => {
+	document.getElementById('name').innerHTML = "Clock Widget Options";
+	document.getElementById('con').innerHTML = "<h3>\
+	clock.main = Set up a clock format. Default is %H:%M</br>\
+	clock.visible = Set visiblity of the clock. Default is false</br>\
+	clock.font = Look for fonts 'cus type font don't work idk why</br>\
+	clock.monofont = Define clock font. Default is Concert One Mono(custom made by my)</br>\
+	clock.fontsize = Regulate font size. Default is 10</br>\
+	clock.layer = Define layer of the widget. Default is background</br>\
+	clock.color = Give your clock a color. Default is #ffffff</br>\
+	clock.background = Choose a background type. Default is transparent</br>\
+	clock.bg_color = Set background color or gradient. Default is $bg-color</br>\
+	clock.bg_size = Set background size if it is an image. Default is cover</br>\
+	clock.bg_pos = Set background position if it is an image. Default is center</br>\
+	clock.bg_rape = Define background image repeting pattern. Default is no-repeat</br>\
+	clock.border = Turn on and of border around clock. Default is false</br>\
+	clock.width = Set a clock width for bigger background or shadow. Default is $clock-size</br>\
+	clock.height = Set a clock height. Default is $clock-size</br>\
+	clock.shadow = Set clock shadow. Default is 2px 2px 4px #000000</br>\
+	clock.anchor = Set anchor position. Default is ['top', 'left']</br>\
+	clock.margins = Set margins top/botom and left/right. Default is ['0', '0']</h3>";
+}
+const medplopt = () => {
+	document.getElementById('name').innerHTML = "Media Widget Options";
+	document.getElementById('con').innerHTML = "<h3>\
+	music.visible = Turn widget on and off. Default is false</br>\
+	music.anchor = Set anchor position. Default is ['top', 'left']</br>\
+	music.margins = Set margins top/botom and left/right. Default is ['0', '0']</br>\
+	music.layer = Define widget layer. Default is bottom</br>\
+	music.box = Define background type. Default is blurred</br>\
+	music.box_color = Set background color or gradient</br>\
+	music.bg_size = Set background size for image. Default is cover</br>\
+	music.bg_pos = Set background position for image. Default is center</br>\
+	music.bg_rape = Set image repeting. Default is no-repeat</br>\
+	music.border = Toggle border. Default is true</br>\
+	music.volume = Toggle volume slider. Default is true</br>\
+	music.vertical = Set widget order to vertical. Default is false</br>\
+	music.titlejustification = Set title justification. Default is left</br>\
+	music.artistjustification = Set artist justification. Default is left</br>\
+	music.cover.visible = Toggle cover visibility. Default is true</br>\
+	music.cover.hpack = Set position of cover. Default is start</br>\
+	music.footer.position = Set visibility for position slider. Default is true</br>\
+	music.footer.controls = Set visibility for controls. Default is true</br>\
+	music.footer.box_visible = Set background type for footer. Default is transpareent</br>\
+	music.footer.box_color = Set background color or gradient for footer. Default is $bg-color</br>\
+	music.footer.border = Toggel border around the footer. Default is false</br>\
+	music.text.visible = Set background type for text. Default is transparent</br>\
+	music.text.bg_color = Set background color or gradient for text. Default is $bg-color</br>\
+	music.text.color = Set text color. Default is $fg-color</br>\
+	music.text.border = Toggle border around text. Default is false</br>\
+	music.Title = Toggle visibility of title. Default is true</br>\
+	music.Artist = Toggle visibility of artist. Default is true</br>\
+	music.min_width = minimum width of widget. Default is 500</br>\
+	msuic.min_height = minimum height of widget. Default is 200</br>\
+	music.cover_width = Set width of cover image. Default is 150</br>\
+	music.cover_height = Set height of cover image. Default is 150</h3>";
+}
+const moonopt = () => {
+	document.getElementById('name').innerHTML = "Moon Widget Options";
+	document.getElementById('con').innerHTML = "<h3>\
+	moon.path = Define path to folder with moon images for all moon phases. Default is ' '</br>\
+	moon.visible = Define widget visibility. Default is false</br>\
+	moon.size = Set moon size. Default is 0</br>\
+	moon.layer = Define widget layer. Default is background</br>\
+	moon.anchor = Set anchor position. Default is ['top', 'left']</br>\
+	moon.margins = Set margins top/botom and left/right. Default is ['0', '0']</h3>";
+}
+const tplopt = () => {
+	document.getElementById('name').innerHTML = "Top Layer Options";
+	document.getElementById('con').innerHTML = "<h3>\
+	bgtop.image = Set top image. Default is ' '</br>\
+	bgtop.layer = Define widget layer. Default is bottom</br>\
+	bgtop.visible = Turn widget on and off. Default is false</br>\
+	bgtop.size = Set widget size. Default is 0</br>\
+	bgtop.anchor = Set anchor position. Default is ['top', 'left']</br>\
+	bgtop.margins = Set margins top/botom and left/right. Default is ['0', '0']</h3>";
+}
+const sbopt = () => {
+	document.getElementById('name').innerHTML = "Sound Button Options";
+	document.getElementById('con').innerHTML = "<h3>\
+	sound.sound = Define sound of a button. Default is ' '</br>\
+	sound.layer = Define widget layer. Default is background</br>\
+	sound.visible = Turn widget on and off. Default is false</br>\
+	sound.size = Set widget size. Default is 0</br>\
+	sound.icon = Set optional icon. Default is ' '</br>\
+	sound.anchor = Set anchor position. Default is ['top', 'left']</br>\
+	sound.margins = Set margins top/botom and left/right. Default is ['0', '0']</h3>";
+}

@@ -114,3 +114,24 @@
 	text-justify: center;
 	text-align: center;
 }
+.clock{
+	min-height: 150px;
+	background: url('../images/widgets/clock.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.play{
+	min-height: 150px;
+	background: url('../images/widgets/play.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.moon{
+	min-height: 350px;
+	background: url('../images/widgets/moon.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
