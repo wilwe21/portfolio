@@ -1,72 +1,73 @@
 const about = () => {
+	document.getElementById('name').innerHTML = "About"
   	document.getElementById("con").innerHTML = "\
   	<h1>My Aylurs gtk shell config</h1></br>\
   	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div>. Configured to look and work as i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others. I'm creating it to be as customizable as possible.</div>"
 };
 const macchiato = () => {
+	document.getElementById('name').innerHTML = "Catppuccin Macchiato theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>Catppuccin Macchiato</h1></br>\
   	<div class='macchiato'></div>\
   	<h3>Main Theme that i think look the best<h3>"
 };
 const latte = () => {
+	document.getElementById('name').innerHTML = "Catppuccin Latte theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>Catppuccin Latte</h1></br>\
   	<div class='latte'></div>\
   	<h3>Light theme that use a deer-fox wallpaper</h3>"
 };
 const spaghett = () => {
+	document.getElementById('name').innerHTML = "Flying Spaghetti Monster theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>Flying Spaghetti Monster</h1></br>\
   	<div class='spaghett'></div>\
   	<h3>Best religion ever</h3>"
 };
 const mlp = () => {
+	document.getElementById('name').innerHTML = "My Little Pony theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>My Little Pony</h1></br>\
   	<div class='mlp'></div>\
   	<h3>Pony in a jar, lyra plush or smth i don't watch series</h3>"
 };
 const pacman = () => {
+	document.getElementById('name').innerHTML = "Pacman theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>Pacman</h1></br>\
   	<div class='pacman'></div>\
   	<h3>Pacman in space. Windows borders look like a pacman maze</h3>"
 };
 const weirdmagedon = () => {
+	document.getElementById('name').innerHTML = "Weirdmagedon theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>Weirdmagedon</h1></br>\
   	<div class='wg'></div>\
   	<h3>Theme inspired by Gravity Falls weirdmagedon</h3>"
 };
 const kgb = () => {
+	document.getElementById('name').innerHTML = "The Land of Mushrooms theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>The Land of Mushrooms</h1></br>\
   	<div class='kgb'></div>\
   	<h3>Awesome look to a mushroom land. the moon show actual moon phase</h3>"
 };
 const jp2 = () => {
+	document.getElementById('name').innerHTML = "John Paul II theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>John Paul II</h1></br>\
   	<div class='jp'></div>\
   	<h3>The Lord once stood by the shore, He was looking for people ready to follow Him; To catch hearts With the truth of God's words. Ref: O Lord, it is you who have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 2 I am a poor man, My treasure is my hands ready To work with you And a pure heart. Ref: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 3 You, you need my hands, ♪ My heart that's young and fervent ♪ My drops of sweat And loneliness. Ref: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 4. Today we set sail together To catch hearts on the seas of human souls With the net of your truth And the word of life. Ref.: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today</h3>"
 };
 const fnaf = () => {
+	document.getElementById('name').innerHTML = "Freddy FNAF theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>Freaddy FNAF</h1></br>\
   	<div class='fnaf'></div>\
   	<h3>Freddy FNAF. Freddy nose work as intended</h3>"
 };
 const fuck = () => {
+	document.getElementById('name').innerHTML = "Fucked Up Theme"
   	document.getElementById("con").innerHTML = "\
-  	<h1>Fucked Up</h1></br>\
   	<div class='fuck'></div>\
   	<h3>My name is UI designer</h3>"
 };
 const widgets = () => {
+	document.getElementById('name').innerHTML = "Widgets"
 	document.getElementById('con').innerHTML = "\
 	<div class='center'>\
-	<h1>Widgets</h1>\
 	<h3>Quicksettings</h3>\
 	<div class='quicksettings'></div>\
 	<h4>Quick setup to adjust volume, brightness, wifi and theme</h4></br>\
@@ -88,8 +89,8 @@ const widgets = () => {
 	</div>"
 };
 const shorts = () => {
+	document.getElementById('name').innerHTML = "Shortcuts"
 	document.getElementById('con').innerHTML ="\
-	<h1>Shortcuts</h1>\
 	<b>Super + Q</b> = run Terminal</br>\
 	<b>Super + X</b> = run Audio Visualizer</br>\
 	<b>Super + C</b> = close current focused app</br>\
@@ -143,4 +144,12 @@ const shorts = () => {
 	<b>Super + Left Click</b> = Move Window</br>\
 	<b>Super + Right Click</b> = Resize Window</br>\
 	<b>Super + Shift + Right Click</b> = Resize Window keep floting window aspectratio"
+};
+const desk = () => {
+	document.getElementById('name').innerHTML = "Desktop Widgets"
+	document.getElementById('con').innerHTML = "\
+	<h3>Clock</h3>\
+	<h3>Media Player</h3>\
+	<h3>Top layer</h3>\
+	<h3>Sound Button</h3>"
 };
