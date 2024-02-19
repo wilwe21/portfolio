@@ -1,17 +1,17 @@
 @mixin button-focus() {
-    	box-shadow: inset 0 0 0 $border-width $accent;
+    	//box-shadow: inset 0 0 0 $border-width $accent;
 	background-color: $hover;
     	color: $hover-fg;
 }
 
 @mixin button-hover() {
-    	box-shadow: inset 0 0 0 $border-width $border-color;
+    	//box-shadow: inset 0 0 0 $border-width $border-color;
     	background-color: $hover;
     	color: $hover-fg;
 }
 
 @mixin button-active() {
-    	box-shadow: inset 0 0 0 $border-width $border-color;
+    	//box-shadow: inset 0 0 0 $border-width $border-color;
     	background-image: $active-gradient;
     	background-color: $accent;
     	color: $accent-fg;
@@ -35,7 +35,7 @@
         	box-shadow: none;
     	} @else{
         	background-color: $widget-bg;
-        	box-shadow: inset 0 0 0 $border-width $border-color;
+        	//box-shadow: inset 0 0 0 $border-width $border-color;
     	}
     	@if $reactive{
     		@if $focusable {

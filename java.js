@@ -1,64 +1,164 @@
+const theme = mot => {
+	const b = document.getElementById('body')
+	const n = document.getElementById('name')
+	const c = document.getElementById('con')
+	const k = document.getElementById('back')
+	var cssId = 'myCss';
+	var head  = document.getElementsByTagName('head')[0];
+	if (mot == 'CM') {
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/CM.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'CL'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/CL.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'FSM'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/FSM.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'MLP'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/MLP.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'PCM'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/PCM.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'Wi'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/Wi.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'TLM'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/TLM.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'JP'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/JP.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'FF'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/FF.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	} else if ( mot == 'FU'){
+    		var link  = document.createElement('link');
+    		link.id = cssId;
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = './css/FU.css';
+    		link.media = 'all';
+    		head.appendChild(link);
+	}
+};
 const about = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "About"
   	document.getElementById("con").innerHTML = "\
   	<h1>My Aylurs gtk shell config</h1></br>\
   	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div>. Configured to look and work as i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others. I'm creating it to be as customizable as possible.</div>"
 };
 const macchiato = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Catppuccin Macchiato theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='macchiato'></div>\
   	<h3>Main Theme that i think look the best<h3>"
 };
 const latte = () => {
+	theme('CL')
 	document.getElementById('name').innerHTML = "Catppuccin Latte theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='latte'></div>\
   	<h3>Light theme that use a deer-fox wallpaper</h3>"
 };
 const spaghett = () => {
+	theme('FSM')
 	document.getElementById('name').innerHTML = "Flying Spaghetti Monster theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='spaghett'></div>\
   	<h3>Best religion ever</h3>"
 };
 const mlp = () => {
+	theme('MLP')
 	document.getElementById('name').innerHTML = "My Little Pony theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='mlp'></div>\
   	<h3>Pony in a jar, lyra plush or smth i don't watch series</h3>"
 };
 const pacman = () => {
+	theme('PCM')
 	document.getElementById('name').innerHTML = "Pacman theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='pacman'></div>\
   	<h3>Pacman in space. Windows borders look like a pacman maze</h3>"
 };
 const weirdmagedon = () => {
+	theme('Wi')
 	document.getElementById('name').innerHTML = "Weirdmagedon theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='wg'></div>\
   	<h3>Theme inspired by Gravity Falls weirdmagedon</h3>"
 };
 const kgb = () => {
+	theme('TLM')
 	document.getElementById('name').innerHTML = "The Land of Mushrooms theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='kgb'></div>\
   	<h3>Awesome look to a mushroom land. the moon show actual moon phase</h3>"
 };
 const jp2 = () => {
+	theme('JP')
 	document.getElementById('name').innerHTML = "John Paul II theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='jp'></div>\
   	<h3>The Lord once stood by the shore, He was looking for people ready to follow Him; To catch hearts With the truth of God's words. Ref: O Lord, it is you who have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 2 I am a poor man, My treasure is my hands ready To work with you And a pure heart. Ref: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 3 You, you need my hands, ♪ My heart that's young and fervent ♪ My drops of sweat And loneliness. Ref: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today. 4. Today we set sail together To catch hearts on the seas of human souls With the net of your truth And the word of life. Ref.: O Lord, you have looked upon me, Your lips have spoken my name today. I leave my barge on the shore, I'll start a new fishery with you today</h3>"
 };
 const fnaf = () => {
+	theme('FF')
 	document.getElementById('name').innerHTML = "Freddy FNAF theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='fnaf'></div>\
   	<h3>Freddy FNAF. Freddy nose work as intended</h3>"
 };
 const fuck = () => {
+	theme('FU')
 	document.getElementById('name').innerHTML = "Fucked Up Theme"
   	document.getElementById("con").innerHTML = "\
   	<div class='fuck'></div>\

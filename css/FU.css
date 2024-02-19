@@ -24,7 +24,7 @@
 }
 body {
   background-color: #181825;
-  color: #CDD6F4;
+  color: #ECEA79;
   font-family: Roboto;
 }
 
@@ -42,39 +42,36 @@ br {
 .back {
   all: unset;
   transition: 200ms;
-  color: #CDD6F4;
+  color: #ECEA79;
   cursor: pointer;
-  background-color: rgba(205, 214, 244, 0.06);
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  border: 2px solid #CBA6F7;
+  background-color: rgba(236, 234, 121, 0.06);
+  border: 2px solid #ECEA79;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
-  background: linear-gradient(to right, #490d91, #222234, #181825);
+  background: #181825;
   max-width: 150px;
   grid-area: start;
   text-align: start;
 }
 .back:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-color: rgba(205, 214, 244, 0.154);
-  color: #f7f8fd;
+  background-color: rgba(236, 234, 121, 0.154);
+  color: #f2f1a6;
 }
 .back:active, .back.on, .back.active, .back:checked {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
-  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
-  background-color: #CBA6F7;
+  background-image: linear-gradient(to right, #ECEA79, #dfdc20);
+  background-color: #ECEA79;
   color: #181825;
 }
 .back:disabled {
   box-shadow: none;
   background-color: transparent;
-  color: rgba(205, 214, 244, 0.3);
+  color: rgba(236, 234, 121, 0.3);
 }
 
 .name {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #ECEA79;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
@@ -84,13 +81,13 @@ br {
   text-align: center;
 }
 
-.placeholder {
-  border: 2px solid #CBA6F7;
+.git {
+  border: 2px solid #ECEA79;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
-  background: linear-gradient(to left, #490d91, #222234, #181825);
+  background: #181825;
   max-width: 150px;
   grid-area: end;
   text-align: end;
@@ -102,24 +99,24 @@ br {
 }
 
 .nav {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #ECEA79;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
-  background: linear-gradient(to right, #490d91, #222234, #181825);
+  background: #181825;
   grid-area: nav;
 }
 
 .con {
-  border: 2px solid #CBA6F7;
+  border: 2px solid #ECEA79;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
   grid-area: con;
   text-align: left;
-  background: linear-gradient(to left, #490d91, #222234, #181825, #181825, #181825);
+  background: #181825;
 }
 
 .lt {
@@ -288,4 +285,4 @@ br {
   background-position: center;
 }
 
-/*# sourceMappingURL=dotsstyle.css.map */
+/*# sourceMappingURL=FU.css.map */

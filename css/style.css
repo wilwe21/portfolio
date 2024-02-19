@@ -136,7 +136,7 @@ br {
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -152,12 +152,12 @@ br {
   background-size: 500px;
 }
 .dots:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
 .dots:active, .dots.on, .dots.active, .dots:checked {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/dots.png") no-repeat top center;
   background-repeat: no-repeat;
   background-position: center;
@@ -177,7 +177,7 @@ br {
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -193,12 +193,12 @@ br {
   background-size: 500px;
 }
 .mine:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
 .mine:active, .mine.on, .mine.active, .mine:checked {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/mine.png") no-repeat top center;
   background-repeat: no-repeat;
   background-position: center;
@@ -218,7 +218,7 @@ br {
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -234,12 +234,12 @@ br {
   background-size: 500px;
 }
 .szach:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
 .szach:active, .szach.on, .szach.active, .szach:checked {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/szach.png") no-repeat top center;
   background-repeat: no-repeat;
   background-position: center;
@@ -259,7 +259,7 @@ br {
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -275,12 +275,12 @@ br {
   background-size: 500px;
 }
 .bush:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
 .bush:active, .bush.on, .bush.active, .bush:checked {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/bush.png") no-repeat top center;
   background-repeat: no-repeat;
   background-position: center;
@@ -300,7 +300,7 @@ br {
   color: #CDD6F4;
   cursor: pointer;
   background-color: rgba(205, 214, 244, 0.06);
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -315,12 +315,12 @@ br {
   background-size: 500px;
 }
 .bash:hover {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
 .bash:active, .bash.on, .bash.active, .bash:checked {
-  box-shadow: inset 0 0 0 2px rgba(205, 214, 244, 0);
+  box-shadow: inset 0 0 0 2px #CBA6F7;
   background: linear-gradient(rgba(148, 72, 239, 0.8), rgba(148, 72, 239, 0.8)), url("../images/bash.png") no-repeat top center;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "concert";
+  src: url(../fonts/ConcertOne.ttf);
+}
+@font-face {
+  font-family: "mononoki";
+  src: url(../fonts/mononoki.ttf);
+}
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/rubik.ttf);
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url(../fonts/ubuntu.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/roboto.ttf);
+}
+@font-face {
+  font-family: "Hack";
+  src: url(../fonts/HackNerdFont.ttf);
+}
+body {
+  background-color: #181825;
+  color: #ECEA79;
+  font-family: Roboto;
+}
+
+br {
+  display: block;
+  margin: 3px 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-areas: "start center end" "nav con con";
+}
+
+.back {
+  all: unset;
+  transition: 200ms;
+  color: #ECEA79;
+  cursor: pointer;
+  background-color: rgba(236, 234, 121, 0.06);
+  border: 2px solid #ECEA79;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  background: #181825;
+  max-width: 150px;
+  grid-area: start;
+  text-align: start;
+}
+.back:hover {
+  background-color: rgba(236, 234, 121, 0.154);
+  color: #f2f1a6;
+}
+.back:active, .back.on, .back.active, .back:checked {
+  background-image: linear-gradient(to right, #ECEA79, #dfdc20);
+  background-color: #ECEA79;
+  color: #181825;
+}
+.back:disabled {
+  box-shadow: none;
+  background-color: transparent;
+  color: rgba(236, 234, 121, 0.3);
+}
+
+.name {
+  border: 2px solid #ECEA79;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  min-width: 300px;
+  grid-area: center;
+  text-align: center;
+}
+
+.git {
+  border: 2px solid #ECEA79;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  background: #181825;
+  max-width: 150px;
+  grid-area: end;
+  text-align: end;
+}
+
+.link {
+  all: unset;
+  cursor: pointer;
+}
+
+.nav {
+  border: 2px solid #ECEA79;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  background: #181825;
+  grid-area: nav;
+}
+
+.con {
+  border: 2px solid #ECEA79;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  grid-area: con;
+  text-align: left;
+  background: #181825;
+}
+
+.lt {
+  text-decoration-line: line-through;
+  display: inline-block;
+}
+
+.line {
+  display: inline-block;
+}
+
+.macchiato {
+  min-height: 500px;
+  background: url("../images/conf/macchiato.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.latte {
+  min-height: 500px;
+  background: url("../images/conf/latte.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.spaghett {
+  min-height: 500px;
+  background: url("../images/conf/spaghett.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mlp {
+  min-height: 500px;
+  background: url("../images/conf/mlp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pacman {
+  min-height: 500px;
+  background: url("../images/conf/pacman.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wg {
+  min-height: 500px;
+  background: url("../images/conf/wg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.kgb {
+  min-height: 500px;
+  background: url("../images/conf/kgb.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jp {
+  min-height: 500px;
+  background: url("../images/conf/jp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fnaf {
+  min-height: 500px;
+  background: url("../images/conf/fnaf.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fuck {
+  min-height: 500px;
+  background: url("../images/conf/fuck.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quicksettings {
+  min-height: 450px;
+  background: url("../images/widgets/quicksettings.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dashboard {
+  min-height: 350px;
+  background: url("../images/widgets/dashboard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.applauncher {
+  min-height: 350px;
+  background: url("../images/widgets/applauncher.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.powermenu {
+  min-height: 350px;
+  background: url("../images/widgets/powermenu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.music {
+  min-height: 250px;
+  background: url("../images/widgets/music.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.media {
+  min-height: 150px;
+  background: url("../images/widgets/media.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.center {
+  text-justify: center;
+  text-align: center;
+}
+
+.clock {
+  min-height: 150px;
+  background: url("../images/widgets/clock.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.play {
+  min-height: 150px;
+  background: url("../images/widgets/play.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.moon {
+  min-height: 350px;
+  background: url("../images/widgets/moon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*# sourceMappingURL=Wi.css.map */
