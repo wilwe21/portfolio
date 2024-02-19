@@ -2,9 +2,9 @@ $spacing: 5px;
 $padding: 7px;
 $radii: 7px;
 $font: Roboto;
-$bg-color: #181825;
-$fg-color: #ECEA79;
-$accent: #ECEA79;
+$bg-color: #eeee0e;
+$fg-color: #000700;
+$accent: #666420;
 $accent-fg: $bg-color;
 $border-color: $accent;
 $border-opacity: 100;
@@ -15,9 +15,9 @@ $shadow: rgba(0, 0, 0, .6);
 $transition: 200ms;
 $accent-gradient: to right, $accent, darken($accent, 20);
 $accent-bgradient: to bottom, $accent, darken($accent, 20);
-$gradl: $bg-color;
-$gradL: $bg-color;
-$gradr: $bg-color;
+$gradl: repeating-linear-gradient(to right,red,red 5px,green 5px,green 10px,blue 10px, blue 11px);
+$gradL: repeating-linear-gradient(135deg,black, black 5px, white 5px, white 10px, red 10px, red 15px);
+$gradr: repeating-radial-gradient(red, yellow,blue,green,white,black);
 
 $br-size: 3px;
 

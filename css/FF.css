@@ -82,6 +82,11 @@ br {
 }
 
 .git {
+  all: unset;
+  transition: 200ms;
+  color: #FEF8EA;
+  cursor: pointer;
+  background-color: rgba(254, 248, 234, 0.06);
   border: 2px solid #794935;
   border-radius: 7px;
   margin: 10px;
@@ -91,6 +96,20 @@ br {
   max-width: 150px;
   grid-area: end;
   text-align: end;
+}
+.git:hover {
+  background-color: rgba(254, 248, 234, 0.154);
+  color: white;
+}
+.git:active, .git.on, .git.active, .git:checked {
+  background-image: linear-gradient(to right, #794935, #321e16);
+  background-color: #794935;
+  color: #181825;
+}
+.git:disabled {
+  box-shadow: none;
+  background-color: transparent;
+  color: rgba(254, 248, 234, 0.3);
 }
 
 .link {

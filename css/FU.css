@@ -23,8 +23,8 @@
   src: url(../fonts/HackNerdFont.ttf);
 }
 body {
-  background-color: #181825;
-  color: #ECEA79;
+  background-color: #eeee0e;
+  color: #000700;
   font-family: Roboto;
 }
 
@@ -42,36 +42,36 @@ br {
 .back {
   all: unset;
   transition: 200ms;
-  color: #ECEA79;
+  color: #000700;
   cursor: pointer;
-  background-color: rgba(236, 234, 121, 0.06);
-  border: 2px solid #ECEA79;
+  background-color: rgba(0, 7, 0, 0.06);
+  border: 2px solid #666420;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
-  background: #181825;
+  background: repeating-radial-gradient(red, yellow, blue, green, white, black);
   max-width: 150px;
   grid-area: start;
   text-align: start;
 }
 .back:hover {
-  background-color: rgba(236, 234, 121, 0.154);
-  color: #f2f1a6;
+  background-color: rgba(0, 7, 0, 0.154);
+  color: #003a00;
 }
 .back:active, .back.on, .back.active, .back:checked {
-  background-image: linear-gradient(to right, #ECEA79, #dfdc20);
-  background-color: #ECEA79;
-  color: #181825;
+  background-image: linear-gradient(to right, #666420, #181808);
+  background-color: #666420;
+  color: #eeee0e;
 }
 .back:disabled {
   box-shadow: none;
   background-color: transparent;
-  color: rgba(236, 234, 121, 0.3);
+  color: rgba(0, 7, 0, 0.3);
 }
 
 .name {
-  border: 2px solid #ECEA79;
+  border: 2px solid #666420;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
@@ -82,15 +82,34 @@ br {
 }
 
 .git {
-  border: 2px solid #ECEA79;
+  all: unset;
+  transition: 200ms;
+  color: #000700;
+  cursor: pointer;
+  background-color: rgba(0, 7, 0, 0.06);
+  border: 2px solid #666420;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
-  background: #181825;
+  background: repeating-linear-gradient(to right, red, red 5px, green 5px, green 10px, blue 10px, blue 11px);
   max-width: 150px;
   grid-area: end;
   text-align: end;
+}
+.git:hover {
+  background-color: rgba(0, 7, 0, 0.154);
+  color: #003a00;
+}
+.git:active, .git.on, .git.active, .git:checked {
+  background-image: linear-gradient(to right, #666420, #181808);
+  background-color: #666420;
+  color: #eeee0e;
+}
+.git:disabled {
+  box-shadow: none;
+  background-color: transparent;
+  color: rgba(0, 7, 0, 0.3);
 }
 
 .link {
@@ -99,24 +118,24 @@ br {
 }
 
 .nav {
-  border: 2px solid #ECEA79;
+  border: 2px solid #666420;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
-  background: #181825;
+  background: repeating-radial-gradient(red, yellow, blue, green, white, black);
   grid-area: nav;
 }
 
 .con {
-  border: 2px solid #ECEA79;
+  border: 2px solid #666420;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
   grid-area: con;
   text-align: left;
-  background: #181825;
+  background: repeating-linear-gradient(135deg, black, black 5px, white 5px, white 10px, red 10px, red 15px);
 }
 
 .lt {

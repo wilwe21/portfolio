@@ -28,6 +28,7 @@ br {
 	text-align: center;
 }
 .git{
+	@include button;
 	@include border;
 	background: $gradl;
 	max-width: 150px;
