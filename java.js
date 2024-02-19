@@ -92,7 +92,8 @@ const about = () => {
 	document.getElementById('name').innerHTML = "About"
   	document.getElementById("con").innerHTML = "\
   	<h1>My Aylurs gtk shell config</h1></br>\
-  	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div>. Configured to look and work as i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others. I'm creating it to be as customizable as possible.</div>"
+  	<div class='line'>I'm making it by my own <div class='lt'>with some stolen code</div>. Configured to look and work as i want it to work. In top right corner you have link to GitHub with all code and hyprland config, themes, wallpapers and others. I'm creating it to be as customizable as possible.</div></br></br></br></br>\
+  	<h2>Working: working. Bloated: working</h2>"
 };
 const macchiato = () => {
 	theme('CM')
