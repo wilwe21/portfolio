@@ -268,6 +268,33 @@ const desk = () => {
 	<a class='link' onclick='sbopt()'>Configurable options</a></br>\
 	</div>"
 };
+const apps = () => {
+	theme('CM')
+	document.getElementById('name').innerHTML = 'Apps'
+	document.getElementById('con').innerHTML = "<h3>\
+	linux-zen</br>\
+	Hyprland</br>\
+	Aylur-gtk-shell</br>\
+	swww</br>\
+	sway-lock</br>\
+	brightnessctl</br>\
+	pipewire-pulse</br>\
+	yay</br>\
+	pamac-manager</br>\
+	nautilus</br>\
+	gnome-system-monitor</br>\
+	gnome-calculator</br>\
+	gnome-disk-utility</br>\
+	gnome-text-editor</br>\
+	kdeconnect</br>\
+	networking-manager</br>\
+	nm-applet</br>\
+	polkit-gnome-authentication-agent</br>\
+	xdg-desktop-portal</br>\
+	hyprpicker</br>\
+	tgpt</br>\
+	</h3>"
+};
 const clockopt = () => {
 	theme('CM')
 	document.getElementById('name').innerHTML = "Clock Widget Options";
