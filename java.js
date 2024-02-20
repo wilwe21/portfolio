@@ -166,6 +166,7 @@ const fuck = () => {
   	<h3>My name is UI designer</h3>"
 };
 const widgets = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Widgets"
 	document.getElementById('con').innerHTML = "\
 	<div class='center'>\
@@ -190,6 +191,7 @@ const widgets = () => {
 	</div>"
 };
 const shorts = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Shortcuts"
 	document.getElementById('con').innerHTML ="\
 	<b>Super + Q</b> = run Terminal</br>\
@@ -247,6 +249,7 @@ const shorts = () => {
 	<b>Super + Shift + Right Click</b> = Resize Window keep floting window aspectratio"
 };
 const desk = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Desktop Widgets"
 	document.getElementById('con').innerHTML = "\
 	<div class='center'>\
@@ -266,6 +269,7 @@ const desk = () => {
 	</div>"
 };
 const clockopt = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Clock Widget Options";
 	document.getElementById('con').innerHTML = "<h3>\
 	clock.main = Set up a clock format. Default is %H:%M</br>\
@@ -288,6 +292,7 @@ const clockopt = () => {
 	clock.margins = Set margins top/botom and left/right. Default is ['0', '0']</h3>";
 }
 const medplopt = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Media Widget Options";
 	document.getElementById('con').innerHTML = "<h3>\
 	music.visible = Turn widget on and off. Default is false</br>\
@@ -323,6 +328,7 @@ const medplopt = () => {
 	music.cover_height = Set height of cover image. Default is 150</h3>";
 }
 const moonopt = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Moon Widget Options";
 	document.getElementById('con').innerHTML = "<h3>\
 	moon.path = Define path to folder with moon images for all moon phases. Default is ' '</br>\
@@ -333,6 +339,7 @@ const moonopt = () => {
 	moon.margins = Set margins top/botom and left/right. Default is ['0', '0']</h3>";
 }
 const tplopt = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Top Layer Options";
 	document.getElementById('con').innerHTML = "<h3>\
 	bgtop.image = Set top image. Default is ' '</br>\
@@ -343,6 +350,7 @@ const tplopt = () => {
 	bgtop.margins = Set margins top/botom and left/right. Default is ['0', '0']</h3>";
 }
 const sbopt = () => {
+	theme('CM')
 	document.getElementById('name').innerHTML = "Sound Button Options";
 	document.getElementById('con').innerHTML = "<h3>\
 	sound.sound = Define sound of a button. Default is ' '</br>\
