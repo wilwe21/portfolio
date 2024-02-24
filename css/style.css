@@ -90,6 +90,11 @@ br {
 }
 
 .end {
+  all: unset;
+  transition: 200ms;
+  color: #CDD6F4;
+  cursor: pointer;
+  background-color: rgba(205, 214, 244, 0.06);
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -99,6 +104,20 @@ br {
   max-width: 150px;
   grid-area: end;
   text-align: end;
+}
+.end:hover {
+  background-color: rgba(205, 214, 244, 0.154);
+  color: #f7f8fd;
+}
+.end:active, .end.on, .end.active, .end:checked {
+  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
+  background-color: #CBA6F7;
+  color: #181825;
+}
+.end:disabled {
+  box-shadow: none;
+  background-color: transparent;
+  color: rgba(205, 214, 244, 0.3);
 }
 
 .end-middle {

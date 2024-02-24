@@ -45,6 +45,7 @@ br {
 	display: flex;
 }
 .end{
+	@include button;
 	@include border;
 	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
 	max-width: 150px;
