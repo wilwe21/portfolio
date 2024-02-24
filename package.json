@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/style.scss:css/style.css sass/scriptstyle.scss:css/scriptstyle.css sass/CM.scss:css/CM.css sass/CL.scss:css/CL.css sass/FSM.scss:css/FSM.css sass/MLP.scss:css/MLP.css sass/PCM.scss:css/PCM.css sass/Wi.scss:css/Wi.css sass/TLM.scss:css/TLM.css sass/JP.scss:css/JP.css sass/FF.scss:css/FF.css sass/FU.scss:css/FU.css"
+    "sass": "sass --watch sass/style.scss:css/style.css sass/scriptstyle.scss:css/scriptstyle.css sass/lorestyle.scss:css/lorestyle.css sass/CM.scss:css/CM.css sass/CL.scss:css/CL.css sass/FSM.scss:css/FSM.css sass/MLP.scss:css/MLP.css sass/PCM.scss:css/PCM.css sass/Wi.scss:css/Wi.css sass/TLM.scss:css/TLM.css sass/JP.scss:css/JP.css sass/FF.scss:css/FF.css sass/FU.scss:css/FU.css"
   },
   "author": "",
   "license": "ISC",

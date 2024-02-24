@@ -1,0 +1,58 @@
+body{
+	background-color: $bg-color;
+	color: $fg-color;
+	font-family: $font;
+}
+br {
+   display: block;
+   margin: $br-size 0;
+}
+.content{
+	display: grid;
+	grid-template-columns: 150px auto 150px; 
+  	grid-template-areas: 'start center end'
+  			     'nav con con';
+}
+.back{
+	@include button;
+	@include border;
+	background: $gradr;
+	max-width: 150px;
+	grid-area: start;
+	text-align: start;
+}
+.name{
+	@include border;
+	min-width: 300px;
+	grid-area: center;
+	text-align: center;
+}
+.end{
+	@include border;
+	background: $gradl;
+	max-width: 150px;
+	grid-area: end;
+	text-align: end;
+}
+.link{
+	@include link;
+}
+.nav{
+	@include border;
+	background: $gradr;
+	grid-area: nav;
+}
+.con{
+	@include border;
+	grid-area: con;
+	text-align: left;
+	background: $gradL;
+}
+.lt{
+	text-decoration-line: line-through;
+	display: inline-block;
+}
+.line{
+	all: unset;
+	display: inline-block;
+}
