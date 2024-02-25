@@ -98,12 +98,19 @@ br {
   cursor: pointer;
 }
 
+.stick {
+  display: stick;
+  top: 7px;
+}
+
 .nav {
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  display: flex;
+  align-items: start;
   background: linear-gradient(to right, #490d91, #222234, #181825);
   grid-area: nav;
 }

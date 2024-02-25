@@ -38,6 +38,10 @@ br {
 .link{
 	@include link;
 }
+.stick{
+	position: sticky;
+	top: $padding;
+}
 .nav{
 	@include border;
 	background: $gradr;

@@ -37,8 +37,14 @@ br {
 .link{
 	@include link;
 }
+.stick{
+	display: stick;
+	top: $padding;
+}
 .nav{
 	@include border;
+	display: flex;
+	align-items: start;
 	background: $gradr;
 	grid-area: nav;
 }
