@@ -11,7 +11,7 @@ const ovisa = () => {
     <h3 class='line'>Planet very similiar to earth with one exception. On this planet lives population of anthropomorphic sheeps with higher inteligence than human</h3>"
 };
 const bib = () => {
-    document.getElementById('name').innerHTML = "Bible of the broken god"
+    document.getElementById('name').innerHTML = "Bible of the False Idol"
     document.getElementById('con').innerHTML = "\
     <h1>History of false Idol</h1>\
     <h3 class='line'>Our planet once was been invided by a strange alien that though he was a powerfull like a god and he can do whatever he imagine.</h3>"
