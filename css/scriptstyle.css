@@ -28,13 +28,13 @@ body {
   font-family: Roboto;
 }
 
-.topbar {
+.topbars {
   display: grid;
   grid-template-columns: 150px auto 150px;
-  grid-template-areas: "start center end";
+  grid-template-areas: "starts centers ends";
 }
 
-.back {
+.backs {
   all: unset;
   transition: 200ms;
   color: #CDD6F4;
@@ -47,36 +47,36 @@ body {
   padding: 7px;
   background: linear-gradient(to right, #490d91, #222234, #181825);
   max-width: 150px;
-  grid-area: start;
+  grid-area: starts;
   text-align: start;
 }
-.back:hover {
+.backs:hover {
   background-color: rgba(205, 214, 244, 0.154);
   color: #f7f8fd;
 }
-.back:active, .back.on, .back.active, .back:checked {
+.backs:active, .backs.on, .backs.active, .backs:checked {
   background-image: linear-gradient(to right, #CBA6F7, #9448ef);
   background-color: #CBA6F7;
   color: #181825;
 }
-.back:disabled {
+.backs:disabled {
   box-shadow: none;
   background-color: transparent;
   color: rgba(205, 214, 244, 0.3);
 }
 
-.name {
+.names {
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
   min-width: 300px;
-  grid-area: center;
+  grid-area: centers;
   text-align: center;
 }
 
-.placeholder {
+.placeholders {
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -84,11 +84,11 @@ body {
   padding: 7px;
   background: linear-gradient(to left, #490d91, #222234, #181825);
   max-width: 150px;
-  grid-area: end;
+  grid-area: ends;
   text-align: end;
 }
 
-.content {
+.contents {
   border: 2px solid #CBA6F7;
   border-radius: 7px;
   margin: 10px;
@@ -97,8 +97,8 @@ body {
   min-height: 400px;
   background: linear-gradient(90deg, #490d91, #222234, #181825, #181825, #181825, #181825, #181825, #222234, #490d91);
 }
-.content br {
-  margin-top: -40px;
+.contents br {
+  margin-top: -10px;
 }
 
 .code {
@@ -114,6 +114,10 @@ body {
 .link {
   all: unset;
   cursor: pointer;
+}
+
+.hljs-* {
+  color: #CDD6F4;
 }
 
 /*# sourceMappingURL=scriptstyle.css.map */

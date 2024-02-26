@@ -3,38 +3,41 @@ body{
 	color: $fg-color;
 	font-family: $font;
 }
-.topbar{
+.topbars{
 	display: grid;
 	grid-template-columns: 150px auto 150px; 
-  	grid-template-areas: 'start center end';
+  	grid-template-areas: 'starts centers ends';
 }
-.back{
+.backs{
 	@include button;
 	@include border;
-	background: linear-gradient(to right, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	background: $gradr;
 	max-width: 150px;
-	grid-area: start;
+	grid-area: starts;
 	text-align: start;
 }
-.name{
+.names{
 	@include border;
 	min-width: 300px;
-	grid-area: center;
+	grid-area: centers;
 	text-align: center;
 }
-.placeholder{
+.placeholders{
 	@include border;
-	background: linear-gradient(to left, darken($accent, 50), lighten($bg-color,5), $bg-color);
+	background: $gradl;
 	max-width: 150px;
-	grid-area: end;
+	grid-area: ends;
 	text-align: end;
 }
-.content{
+.contents{
 	@include border;
 	min-height: 400px;
-	background: linear-gradient(90deg,darken($accent, 50), lighten($bg-color,5), $bg-color, $bg-color, $bg-color, $bg-color, $bg-color, lighten($bg-color,5),darken($accent, 50));
+	background: $grad;
 	br {
-		margin-top: -40px;
+		margin-top: -10px;
+	}
+	td{
+		color: #CDD6F4;
 	}
 }
 .code{

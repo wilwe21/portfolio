@@ -7,32 +7,32 @@ br {
    display: block;
    margin: $br-size 0;
 }
-.content{
+.contentd{
 	display: grid;
 	grid-template-columns: 150px auto 150px; 
-  	grid-template-areas: 'start center end'
-  			     'nav con con';
+  	grid-template-areas: 'startd centerd endd'
+  			     'navd cond cond';
 }
-.back{
+.backd{
 	@include button;
 	@include border;
 	background: $gradr;
 	max-width: 150px;
-	grid-area: start;
+	grid-area: startd;
 	text-align: start;
 }
-.name{
+.named{
 	@include border;
 	min-width: 300px;
-	grid-area: center;
+	grid-area: centerd;
 	text-align: center;
 }
-.git{
+.gitd{
 	@include button;
 	@include border;
 	background: $gradl;
 	max-width: 150px;
-	grid-area: end;
+	grid-area: endd;
 	text-align: end;
 }
 .link{
@@ -42,14 +42,14 @@ br {
 	position: sticky;
 	top: $padding;
 }
-.nav{
+.navd{
 	@include border;
 	background: $gradr;
-	grid-area: nav;
+	grid-area: navd;
 }
-.con{
+.cond{
 	@include border;
-	grid-area: con;
+	grid-area: cond;
 	text-align: left;
 	background: $gradL;
 }

@@ -7,31 +7,31 @@ br {
    display: block;
    margin: $br-size 0;
 }
-.content{
+.contentl{
 	display: grid;
 	grid-template-columns: 150px auto 150px; 
-  	grid-template-areas: 'start center end'
-  			     'nav con con';
+  	grid-template-areas: 'startl centerl endl'
+  			     'navl conl conl';
 }
-.back{
+.backl{
 	@include button;
 	@include border;
 	background: $gradr;
 	max-width: 150px;
-	grid-area: start;
+	grid-area: startl;
 	text-align: start;
 }
-.name{
+.namel{
 	@include border;
 	min-width: 300px;
-	grid-area: center;
+	grid-area: centerl;
 	text-align: center;
 }
-.end{
+.endl{
 	@include border;
 	background: $gradl;
 	max-width: 150px;
-	grid-area: end;
+	grid-area: endl;
 	text-align: end;
 }
 .link{
@@ -41,16 +41,16 @@ br {
 	display: stick;
 	top: $padding;
 }
-.nav{
+.navl{
 	@include border;
 	display: flex;
 	align-items: start;
 	background: $gradr;
-	grid-area: nav;
+	grid-area: navl;
 }
-.con{
+.conl{
 	@include border;
-	grid-area: con;
+	grid-area: conl;
 	text-align: left;
 	background: $gradL;
 }

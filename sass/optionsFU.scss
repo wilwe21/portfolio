@@ -18,6 +18,7 @@ $accent-bgradient: to bottom, $accent, darken($accent, 20);
 $gradl: repeating-linear-gradient(to right,red,red 5px,green 5px,green 10px,blue 10px, blue 11px);
 $gradL: repeating-linear-gradient(135deg,black, black 5px, white 5px, white 10px, red 10px, red 15px);
 $gradr: repeating-radial-gradient(red, yellow,blue,green,white,black);
+$grad: linear-gradient(to right, $accent,green, lighten($bg-color,5), red, lighten($bg-color,5), blue, $accent);
 
 $br-size: 3px;
 

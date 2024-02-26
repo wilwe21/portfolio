@@ -8,6 +8,7 @@
 .dots{
 	@include buttonimages('../images/dots.png');
 	@include border;
+	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -20,6 +21,7 @@
 .mine{
 	@include buttonimages('../images/mine.png');
 	@include border;
+	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -32,6 +34,7 @@
 .szach{
 	@include buttonimages('../images/szach.png');
 	@include border;
+	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -44,6 +47,7 @@
 .bush{
 	@include buttonimages('../images/bush.png');
 	@include border;
+	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -56,6 +60,7 @@
 .bash{
 	@include buttonimages('../images/bash.png');
 	@include border;
+	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
 	background-position: center;

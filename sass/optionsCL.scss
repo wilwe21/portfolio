@@ -18,6 +18,7 @@ $accent-bgradient: to bottom, $accent, darken($accent, 20);
 $gradl: linear-gradient(to left, $accent, lighten($bg-color,5), $bg-color);
 $gradL: linear-gradient(to left, $accent, lighten($bg-color,5), $bg-color, $bg-color, $bg-color);
 $gradr: linear-gradient(to right, $accent, lighten($bg-color,5), $bg-color);
+$grad: linear-gradient(to right, $accent, lighten($bg-color,5), $bg-color, lighten($bg-color,5), $accent);
 
 $br-size: 3px;
 
