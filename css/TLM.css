@@ -83,10 +83,9 @@ br {
   padding: 7px;
   word-wrap: break-word;
   min-width: 400px;
-  min-height: 400;
+  height: 87vh;
   grid-area: center-middlem;
   text-align: center;
-  display: flex;
 }
 
 .endm {
@@ -141,9 +140,11 @@ br {
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0px, 50000px));
-  grid-template-areas: "dots mine szach" "bush bash .";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 300px;
+  min-width: 300px;
 }
 
 .dots {

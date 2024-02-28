@@ -39,10 +39,9 @@ br {
 	@include border;
 	word-wrap: break-word;
 	min-width: 400px;
-	min-height: 400;
+	height: 87vh;
 	grid-area: center-middlem;
 	text-align: center;
-	display: flex;
 }
 .endm{
 	@include button;
