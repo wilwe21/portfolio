@@ -434,7 +434,7 @@ body {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
-  min-height: 400px;
+  height: auto;
   background: linear-gradient(90deg, #490d91, #222234, #181825, #181825, #181825, #181825, #181825, #222234, #490d91);
 }
 .contents br {
@@ -472,7 +472,9 @@ br {
 
 .contentl {
   display: grid;
+  height: 100%;
   grid-template-columns: 150px auto 150px;
+  grid-template-rows: min-content auto;
   grid-template-areas: "startl centerl endl" "navl conl conl";
 }
 
@@ -586,7 +588,9 @@ br {
 
 .contentd {
   display: grid;
+  height: 100%;
   grid-template-columns: 150px auto 150px;
+  grid-template-rows: min-content auto;
   grid-template-areas: "startd centerd endd" "navd cond cond";
 }
 

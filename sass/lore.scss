@@ -9,7 +9,9 @@ br {
 }
 .contentl{
 	display: grid;
+	height: 100%;
 	grid-template-columns: 150px auto 150px; 
+	grid-template-rows: min-content auto;
   	grid-template-areas: 'startl centerl endl'
   			     'navl conl conl';
 }
