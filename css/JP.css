@@ -30,7 +30,9 @@ body {
 
 .box {
   display: grid;
+  height: 100%;
   grid-template-columns: 150px auto 150px;
+  grid-template-rows: min-content auto;
   grid-template-areas: "startm centerm endm" "start-middlem center-middlem end-middlem";
 }
 
@@ -81,10 +83,10 @@ br {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  grid-area: center-middlem;
+  float: top;
   word-wrap: break-word;
   min-width: 400px;
-  height: 87vh;
-  grid-area: center-middlem;
   text-align: center;
 }
 
@@ -143,8 +145,7 @@ br {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 300px;
-  min-width: 300px;
+  height: 25vh;
 }
 
 .dots {
@@ -160,6 +161,7 @@ br {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  flex: 1;
   color: #CDD6F4;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
@@ -202,6 +204,7 @@ br {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  flex: 1;
   color: #CDD6F4;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
@@ -244,6 +247,7 @@ br {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  flex: 1;
   color: #CDD6F4;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
@@ -286,6 +290,7 @@ br {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  flex: 1;
   color: #CDD6F4;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;
@@ -328,6 +333,7 @@ br {
   margin: 10px;
   margin-top: 5px;
   padding: 7px;
+  flex: 1;
   color: #CDD6F4;
   text-shadow: 2px 2px 0px #000000;
   background-repeat: no-repeat;

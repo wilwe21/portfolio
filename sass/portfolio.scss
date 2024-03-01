@@ -2,12 +2,12 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	min-height: 300px;
-	min-width: 300px;
+	height: 25vh;
 }
 .dots{
 	@include buttonimages('../images/dots.png');
 	@include border;
+	flex: 1;
 	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
@@ -21,6 +21,7 @@
 .mine{
 	@include buttonimages('../images/mine.png');
 	@include border;
+	flex: 1;
 	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
@@ -34,6 +35,7 @@
 .szach{
 	@include buttonimages('../images/szach.png');
 	@include border;
+	flex: 1;
 	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
@@ -47,6 +49,7 @@
 .bush{
 	@include buttonimages('../images/bush.png');
 	@include border;
+	flex: 1;
 	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;
@@ -60,6 +63,7 @@
 .bash{
 	@include buttonimages('../images/bash.png');
 	@include border;
+	flex: 1;
 	color: #CDD6F4;
 	text-shadow: 2px 2px 0px #000000;
 	background-repeat: no-repeat;

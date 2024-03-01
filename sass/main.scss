@@ -5,7 +5,9 @@ body{
 }
 .box{
 	display: grid;
-	grid-template-columns: 150px auto 150px; 
+	height: 100%;
+	grid-template-columns: 150px auto 150px;
+	grid-template-rows: min-content auto;
   	grid-template-areas: 
   	'startm centerm endm'
   	'start-middlem center-middlem end-middlem';
@@ -37,10 +39,10 @@ br {
 }
 .center-middlem{
 	@include border;
+	grid-area: center-middlem;
+	float: top;
 	word-wrap: break-word;
 	min-width: 400px;
-	height: 87vh;
-	grid-area: center-middlem;
 	text-align: center;
 }
 .endm{
