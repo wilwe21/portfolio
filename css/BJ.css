@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "concert";
+  src: url(../fonts/ConcertOne.ttf);
+}
+@font-face {
+  font-family: "mononoki";
+  src: url(../fonts/mononoki.ttf);
+}
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/rubik.ttf);
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url(../fonts/ubuntu.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/roboto.ttf);
+}
+@font-face {
+  font-family: "Hack";
+  src: url(../fonts/HackNerdFont.ttf);
+}
+body {
+  background-color: #181825;
+  color: #CDD6F4;
+  font-family: Roboto;
+}
+
+.box {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: min-content auto;
+  grid-template-areas: "startm centerm endm" "start-middlem center-middlem end-middlem";
+}
+
+br {
+  display: block;
+  margin: 3px 0;
+}
+
+.startm {
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  background: linear-gradient(to right, #490d91, #222234, #181825);
+  max-width: 150px;
+  grid-area: startm;
+  text-align: start;
+}
+
+.start-middlem {
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  word-wrap: break-word;
+  max-width: 150px;
+  background: linear-gradient(to right, #490d91, #222234, #181825);
+  grid-area: start-middlem;
+  text-align: start;
+}
+
+.centerm {
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  min-width: 300px;
+  grid-area: centerm;
+  text-align: center;
+}
+
+.center-middlem {
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  grid-area: center-middlem;
+  float: top;
+  word-wrap: break-word;
+  min-width: 400px;
+  text-align: center;
+}
+
+.endm {
+  all: unset;
+  transition: 200ms;
+  color: #CDD6F4;
+  cursor: pointer;
+  background-color: rgba(205, 214, 244, 0.06);
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  background: linear-gradient(to left, #490d91, #222234, #181825);
+  max-width: 150px;
+  grid-area: endm;
+  text-align: end;
+}
+.endm:hover {
+  background-color: rgba(205, 214, 244, 0.154);
+  color: #f7f8fd;
+}
+.endm:active, .endm.on, .endm.active, .endm:checked {
+  background-image: linear-gradient(to right, #CBA6F7, #9448ef);
+  background-color: #CBA6F7;
+  color: #181825;
+}
+.endm:disabled {
+  box-shadow: none;
+  background-color: transparent;
+  color: rgba(205, 214, 244, 0.3);
+}
+
+.end-middlem {
+  border: 2px solid #CBA6F7;
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 5px;
+  padding: 7px;
+  display: end;
+  background: linear-gradient(to left, #490d91, #222234, #181825);
+  margin: 10px;
+  max-width: 150px;
+  margin-top: 5px;
+  grid-area: end-middlem;
+  text-align: end;
+}
+
+.link {
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+  background-color: #181825;
+}
+
+.Dealer {
+  display: flex;
+  font-size: 40px;
+  border: 3px solid #CBA6F7;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+.Player {
+  display: flex;
+  font-size: 40px;
+  border: 3px solid #CBA6F7;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+/*# sourceMappingURL=BJ.css.map */
