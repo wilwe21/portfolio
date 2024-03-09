@@ -211,9 +211,7 @@ const shorts = () => {
 	<b>Super + Shift + Escape</b> = Lockscreen</br>\
 	<b>Super + P</b> = Pseudo tile window</br>\
 	<b>Super + J</b> = Toggle Split</br>\
-	<b>Super + L</b> = run Web Browser on default profile</br>\
-	<b>Super + I</b> = run Web Browser in privet mode</br>\
-	<b>Super + Y</b> = run Web Browser on second profile</br>\
+	<b>Super + B</b> = run Web Launcher</br>\
 	<b>Super + Shift + S</b> = Screenshot tool</br>\
 	<b>Super + F1</b> = Mute audio</br>\
 	<b>Super + F2</b> = Decrese volume by 5%</br>\
