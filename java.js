@@ -158,13 +158,6 @@ const fnaf = () => {
   	<div class='fnaf'></div>\
   	<h3>Freddy FNAF. Freddy nose work as intended</h3>"
 };
-const fuck = () => {
-	theme('FU')
-	document.getElementById('name').innerHTML = "Fucked Up Theme"
-  	document.getElementById("con").innerHTML = "\
-  	<div class='fuck'></div>\
-  	<h3>My name is UI designer</h3>"
-};
 const widgets = () => {
 	theme('CM')
 	document.getElementById('name').innerHTML = "Widgets"
