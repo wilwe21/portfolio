@@ -175,9 +175,6 @@ const widgets = () => {
 	<h3>Power Menu</h3>\
 	<div class='powermenu'></div>\
 	<h4>Quick setup to turn off or reboot</h4></br>\
-	<h3>Music Widget</h3>\
-	<div class='music'></div>\
-	<h4>Show media player on top of full screen and you can change the volume</h4></br>\
 	<h3>Media indicator</h3>\
 	<div class='media'></div>\
 	<h4>Showing every time while video has changed</h4></br>\
