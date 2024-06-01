@@ -1,0 +1,77 @@
+.TopBar {
+  font-size: 30px;
+  color: $accent;
+  text-align: center;
+  display: flex;
+  min-width: 100%;
+  flex: 1;
+  border-bottom: 2px solid $spliter;
+  margin-bottom: 2px+$padding*2;
+  & :nth-child(2) {
+    flex: 2;
+    min-width: calc(((70px - 3*$padding)/1px) *1vw);
+    padding: $padding;
+  }
+  & :nth-child(1) {
+    flex: 3;
+    color: $red;
+    min-width: 10%;
+    padding: $padding;
+    text-align: left;
+  }
+  & :nth-child(3) {
+    flex: 3;
+    color: $red;
+    min-width: 10%;
+    padding: $padding;
+    text-align: right;
+  }
+}
+.Button {
+  @include button();
+  font-size: 35px;
+  flex-grow: 1;
+  max-width: calc(100% - $padding*4);
+}
+#good {
+  color: $green;
+}
+#bad {
+  color: $red;
+}
+@media (max-width: 550px){
+  .ansBox1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ansBox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .DuoMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 550px){
+  .ansBox1 {
+    display: flex;
+  }
+  .ansBox2 {
+    display: flex;
+  }
+  .DuoMenu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.word {
+  text-align: center;
+  font-size: 40px;
+  padding: $padding;
+  margin-bottom: $padding*2;
+}

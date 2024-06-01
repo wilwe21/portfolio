@@ -1,0 +1,25 @@
+// colors
+$red: #F38BA8;
+$green: #A6E3A1;
+$blue: #89B4FA;
+$magenta: #CBA6F7;
+$yellow: #F9E2AF;
+$teal: #94E2D5;
+$black: #181825;
+$orange: #FAB387;
+
+// colors part 2
+$bg: $black;
+$fg:  #CDD6F4;
+$accent: #CBA6F7;
+$accent-fg: $bg;
+// others
+$padding: 7px;
+$radii: 7px;
+$border-width: 2px;
+$border-color: $accent;
+$hover: $accent;
+$hover-fg: $accent-fg;
+
+// addition
+$spliter: lighten($bg, 10);
