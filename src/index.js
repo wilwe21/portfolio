@@ -12,8 +12,8 @@ root.render(
   <React.StrictMode>
 	<BrowserRouter>
 		<Routes>
-			<Route path="/portfolio/main" element={<Main />} />
-			<Route path="/portfolio" element={<Duo />} />
+			<Route path="/main" element={<Main />} />
+			<Route path="/" element={<Duo />} />
 		</Routes>
 	</BrowserRouter>
   </React.StrictMode>
