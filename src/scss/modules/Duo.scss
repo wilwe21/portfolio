@@ -1,29 +1,19 @@
-.TopBar {
-  font-size: 30px;
-  color: $accent;
-  text-align: center;
-  display: flex;
-  min-width: 100%;
-  flex: 1;
-  border-bottom: 2px solid $spliter;
-  margin-bottom: 2px+$padding*2;
+.DTopBar {
+  @include topbar();
   & :nth-child(2) {
     flex: 2;
     min-width: calc(((70px - 3*$padding)/1px) *1vw);
-    padding: $padding;
   }
   & :nth-child(1) {
     flex: 3;
     color: $red;
     min-width: 10%;
-    padding: $padding;
     text-align: left;
   }
   & :nth-child(3) {
     flex: 3;
     color: $red;
     min-width: 10%;
-    padding: $padding;
     text-align: right;
   }
 }

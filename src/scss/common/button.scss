@@ -28,8 +28,8 @@
     color: $fg;
     cursor: pointer;
     user-select: none;
-    margin: $padding;
     padding: $padding;
+    margin: $padding;
     text-align: center;
 
     @if $flat{

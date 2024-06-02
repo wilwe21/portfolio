@@ -1,0 +1,11 @@
+@mixin topbar(){
+  font-size: 30px;
+  color: $accent;
+  text-align: center;
+  display: flex;
+  min-width: 100%;
+  flex: 1;
+  padding: $padding;
+  border-bottom: 2px solid $spliter;
+  margin-bottom: 2px+$padding*2;
+}
