@@ -1,9 +1,9 @@
 function TopBar() {
 	return (
 		<div class="TopBar">
-			<div>grzybnia</div>
-			<div>grzybnia</div>
-			<div>grzybnia</div>
+			<div>✨</div>
+			<div>Welcome</div>
+			<div>✨</div>
 		</div>
 	)
 }

@@ -3,9 +3,8 @@
   color: $accent;
   text-align: center;
   display: flex;
-  min-width: 100%;
+  min-width: calc(100vw - $padding*2);
   flex: 1;
   padding: $padding;
   border-bottom: 2px solid $spliter;
-  margin-bottom: 2px+$padding*2;
 }
