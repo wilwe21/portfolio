@@ -1,6 +1,5 @@
 import React from "react";
 import TopBar from './TopBar.js';
-import { braill, illuminati, enchant } from "../templates.js";
 
 function Options({ userData, profile, setProfile, setOptions }) {
 	const handleClick = () => {

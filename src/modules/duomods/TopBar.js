@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 function TopBar({ userData, title }) {
 	return (
 		<div class="TopBar">
