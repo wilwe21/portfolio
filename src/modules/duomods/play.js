@@ -16,7 +16,6 @@ function Play({ userData, setUserData, setPlay }) {
 		streak(userData, setUserData);
 		setPlay(false);
 	};
-	back();
 	return (
 		<div>
 			{end ? (
