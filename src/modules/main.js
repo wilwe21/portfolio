@@ -8,7 +8,7 @@ function Main() {
 	return (
 		<div>
 			<TopBar />
-			<link to="/" class="Button">chuj</link>
+			<link to="/duo" class="Button">chuj</link>
 		</div>
 	);
 }
