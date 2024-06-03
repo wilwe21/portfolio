@@ -1,3 +1,6 @@
+.txt {
+  @include txt();
+}
 .TopBar {
   @include topbar();
   flex: wrap;

@@ -1,7 +1,11 @@
+import TopBar from "./mainmods/topbar.js"
 function About() {
 	return (
 		<div>
-			chuj
+			<TopBar txt="About Me"/>
+			<div class="txt">
+				So
+			</div>
 		</div>
 	);
 }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Main() {
 	return (
 		<div>
-			<TopBar />
+			<TopBar txt="Welcome" />
 			<div class="MainBox">
 				<Link to="/duo" class="Button">Duo</Link>
 				<a href="https://wilwe.itch.io/" target="_blank" class="Button">Itch.io</a>

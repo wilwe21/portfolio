@@ -1,8 +1,8 @@
-function TopBar() {
+function TopBar({txt}) {
 	return (
 		<div class="TopBar">
 			<div>✨</div>
-			<div>Welcome</div>
+			<div>{txt}</div>
 			<div>✨</div>
 		</div>
 	)

@@ -1,0 +1,10 @@
+@mixin txt(){
+  font-size: 25px;
+  color: $fg;
+  text-align: right;
+  display: flex;
+  min-width: calc(100vw - $padding*2);
+  padding: $padding;
+  flex: 1;
+  padding: $padding;
+}
