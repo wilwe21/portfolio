@@ -1,11 +1,11 @@
 import React from 'react';
-import TopBar from './mainmods/topbar.js'
+import TopBar from '../modules/topbar.js'
 import { Link } from 'react-router-dom';
 
 function Main() {
 	return (
 		<div>
-			<TopBar txt="Welcome" />
+			<TopBar left="✨" middle="Welcome" right="✨"/>
 			<div class="MainBox">
 				<Link to="/duo" class="Button">Duo</Link>
 				<a href="https://wilwe.itch.io/" target="_blank" class="Button">Itch.io</a>

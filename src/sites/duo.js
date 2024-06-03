@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import TopBar from './duomods/TopBar.js';
-import Menu from './duomods/Menu.js';
-import Play from './duomods/play.js';
-import Options from './duomods/Options.js';
-import lifes from './duomods/lifes.js';
-import temp from "./templates.js";
+import TopBar from '../modules/topbar.js';
+import Menu from '../modules/duomods/Menu.js';
+import Play from '../modules/duomods/play.js';
+import Options from '../modules/duomods/Options.js';
+import lifes from '../modules/duomods/lifes.js';
+import temp from "../templates.js";
 
 function Duo() {
 	localStorage.removeItem('null')
@@ -32,7 +32,7 @@ function Duo() {
 		<div>
 			{!play && !options &&
 			<div>
-				<TopBar userData={userData} />
+				<TopBar left={userData?.streak?.count || 0} middle={`Welcome to ${userData?.logo}`} right={userData?.lives || 0} />
 				<Menu userData={userData} setPlay={setPlay} setOptions={setOptions}/>
 			</div>}
 			{play &&

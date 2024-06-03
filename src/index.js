@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Duo from './modules/duo.js';
-import Main from './modules/main.js';
-import About from './modules/about.js';
-import Err from './modules/404.js';
+import Duo from './sites/duo.js';
+import Main from './sites/main.js';
+import About from './sites/about.js';
+import Err from './sites/404.js';
 import "./scss/main.scss";
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { generate } from "random-words";
-import TopBar from "./TopBar.js";
+import TopBar from "../topbar.js";
 import Ctw from "./ctw.js";
 import streak from "./streak.js";
 
@@ -22,7 +22,7 @@ function Play({ userData, setUserData, setPlay }) {
 				<div> {back()} </div>
 			) : (
 				<div>
-					<TopBar userData={userData} title={"Lesson "+les+"/"+userData.length}/>
+					<TopBar left={userData?.streak?.count || 0} middle={`Welcome to ${userData?.logo}`} right={userData?.lives || 0} />
 					<Ctw key={CtwKey()} userData={userData} setUserData={setUserData} word={word} les={les} setLes={setLes}/>
 				</div>
 			)}
