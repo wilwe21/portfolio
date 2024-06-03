@@ -17,12 +17,6 @@
     text-align: right;
   }
 }
-.Button {
-  @include button();
-  font-size: 35px;
-  flex-grow: 1;
-  max-width: calc(100% - $padding*4);
-}
 #good {
   color: $green;
 }

@@ -1,11 +1,16 @@
-.txt {
-  @include txt();
-}
 .TopBar {
   @include topbar();
-  flex: wrap;
   justify-content: space-between;
 }
-.MainBox {
-  padding-top: $padding*2;
+@media (min-width: 550px) {
+  .MainBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 550px) {
+  .MainBox {
+    display: flex;
+    flex-direction: column;
+  }
 }
