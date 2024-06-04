@@ -4,6 +4,7 @@ import Duo from './sites/duo.js';
 import Main from './sites/main.js';
 import About from './sites/about.js';
 import Err from './sites/404.js';
+import Games from './sites/games.js';
 import "./scss/main.scss";
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
@@ -15,8 +16,9 @@ root.render(
 	<BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
 		<Routes>
 			<Route path="/" element={<Main />} />
-			<Route path="/duo" element={<Duo />} />
+			<Route path="/games/duo" element={<Duo />} />
 			<Route path="/about" element={<About />} />
+			<Route path="/games" element={<Games />} />
 			<Route path="*" element={<Err />} />
 		</Routes>
 	</BrowserRouter>

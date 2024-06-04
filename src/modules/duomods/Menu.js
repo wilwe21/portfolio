@@ -8,7 +8,7 @@ function Menu({ userData, setPlay, setOptions }) {
 			<div class="Button" onClick={setPlay}>Play</div>
 			: <div class="Button">No lifes</div>}
 			<div class="Button" onClick={setOptions}>Options</div>
-			<Link to="/" class="Button">Back</Link>
+			<Link to="/games" class="Button">Back</Link>
 		</div>
 	);
 };
