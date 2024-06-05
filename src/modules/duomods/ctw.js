@@ -6,9 +6,8 @@ function Ctw({key, userData, setUserData, word, les, setLes}) {
 	const [ans, setAns] = useState("none");
 	const [options] = useState(() => {
 		const options = generate({exactly: 4, minLength: word.length, maxLength: word.length});
-		if (word in options) {
-		} else {
-		options[Math.floor(Math.random() * 3) + 1] = word;
+		if (!(word in options)) {
+			options[Math.floor(Math.random() * 3) + 1] = word;
 		};
 		return options;
 	});

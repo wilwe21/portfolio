@@ -22,7 +22,7 @@ function Play({ userData, setUserData, setPlay }) {
 				<div> {back()} </div>
 			) : (
 				<div>
-					<TopBar left={userData?.streak?.count || 0} middle={`Welcome to ${userData?.logo}`} right={userData?.lives || 0} />
+					<TopBar left={userData?.streak?.count || 0} middle={`Lesson ${les}/${userData?.length}`} right={userData?.lives || 0} />
 					<Ctw key={CtwKey()} userData={userData} setUserData={setUserData} word={word} les={les} setLes={setLes}/>
 				</div>
 			)}
