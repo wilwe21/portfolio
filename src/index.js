@@ -5,6 +5,7 @@ import Main from './sites/main.js';
 import About from './sites/about.js';
 import Err from './sites/404.js';
 import Games from './sites/games.js';
+import TD from './sites/3d.js';
 import Things from './sites/things.js';
 import "./scss/main.scss";
 
@@ -20,6 +21,7 @@ root.render(
 			<Route path="/games/duo" element={<Duo />} />
 			<Route path="/about" element={<About />} />
 			<Route path="/games" element={<Games />} />
+			<Route path="/3d" element={<TD />} />
 			<Route path="/things" element={<Things />} />
 			<Route path="*" element={<Err />} />
 		</Routes>
