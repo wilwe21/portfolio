@@ -7,6 +7,8 @@ function Options({ userData, profile, setProfile, setOptions }) {
 			setProfile('illuminati')
 		} else if (profile === 'illuminati') {
 			setProfile('enchant')
+		} else if (profile == 'enchant') {
+			setProfile('windings')
 		} else {
 			setProfile('braill')
 		}
@@ -15,6 +17,7 @@ function Options({ userData, profile, setProfile, setOptions }) {
 		localStorage.removeItem('braill')
 		localStorage.removeItem('enchant')
 		localStorage.removeItem('illuminati')
+		localStorage.removeItem('windings')
 	}
 	return (
 		<div>
