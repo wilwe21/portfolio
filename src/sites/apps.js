@@ -3,9 +3,9 @@ import TopBar from '../modules/topbar';
 function Games() {
 	return (
 		<div>
-			<TopBar left="" middle="Games" right="" />
-			<div class="MainBox">
-				<Link to="/games/duo" class="Button">Duo</Link>
+			<TopBar left="" middle="Apps" right="" />
+			<div class="MainBox"> 
+				<Link to="/apps/duo" class="Button">Duo</Link>
 				<Link to="/" class="Button">Back</Link>
 			</div>
 		</div>

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import TopBar from '../modules/topbar.js';
-import Menu from '../modules/duomods/Menu.js';
-import Play from '../modules/duomods/play.js';
-import Options from '../modules/duomods/Options.js';
-import lifes from '../modules/duomods/lifes.js';
-import temp from "../templates.js";
+import TopBar from '../../modules/topbar.js';
+import Menu from '../../modules/duomods/Menu.js';
+import Play from '../../modules/duomods/play.js';
+import Options from '../../modules/duomods/Options.js';
+import lifes from '../../modules/duomods/lifes.js';
+import temp from "../../templates.js";
 
 function Duo() {
 	localStorage.removeItem('null')
