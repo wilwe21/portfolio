@@ -7,7 +7,6 @@ import Templates from '../../templates.js';
 function Translator() {
 	const [lang, setLang] = useState("braill")
 	const langs = Array.from(Object.keys(Templates.templates))
-	console.log(langs)
 	const langObj = Templates.templates[lang].lern;
 	const cHandle = num => {
 		const index = langs.indexOf(lang)

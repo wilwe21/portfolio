@@ -2,6 +2,9 @@
   @include topbar();
   justify-content: space-between;
 }
+.Box {
+  width: 100vw;
+}
 .KeyBox {
     display:flex;
     flex-wrap: wrap;

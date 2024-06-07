@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { generate } from 'random-words';
 import life from './lifes.js';
+import translate from './translate.js';
 
 function Ctw({key, userData, setUserData, word, les, setLes}) {
 	const [ans, setAns] = useState("none");
@@ -11,24 +12,13 @@ function Ctw({key, userData, setUserData, word, les, setLes}) {
 		};
 		return options;
 	});
-	const translate = (ss) => {
-		let NString = ""
-		for (let k = 0; k < ss.length; k++) {
-			if (ss[k] in userData.lern) {
-				NString += userData.lern[ss[k]];
-			} else {
-				NString += ss[k];
-			}
-		};
-		return NString
-	};
 	let optionsEnd = []; 
 	for (let i = 0; i < options.length; i++) {
-		const NString = translate(options[i])
+		const NString = translate(options[i], userData.lern)
 		optionsEnd.push(NString);
 	}
 	const clickHandle = (answer) => {
-		const comp = translate(word)
+		const comp = translate(word, userData.lern)
 		if (ans === "good" || ans === "bad") {
 			return
 		}
