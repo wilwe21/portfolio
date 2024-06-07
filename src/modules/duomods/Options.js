@@ -1,17 +1,21 @@
 import React from "react";
 import TopBar from '../topbar.js';
+import Templates from "../../templates.js";
 
 function Options({ userData, profile, setProfile, setOptions }) {
+	const langs = Array.from(Object.keys(Templates.templates))
 	const handleClick = () => {
-		if (profile === 'braill') {
-			setProfile('illuminati')
-		} else if (profile === 'illuminati') {
-			setProfile('enchant')
-		} else if (profile == 'enchant') {
-			setProfile('windings')
-		} else {
-			setProfile('braill')
+		const index = langs.indexOf(profile)
+		const len = langs.length
+		let ei = index+1
+		if ( ei >= len ) {
+			setProfile(langs[0])
+			return
+		} else if (ei < 0) {
+			setProfile(langs[len])
+			return
 		}
+		setProfile(langs[ei])
 	}
 	const reset = () => {
 		localStorage.removeItem('braill')
