@@ -2,26 +2,28 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import TopBar from '../../modules/topbar.js';
 import ShowKeys from '../../modules/duomods/keyboard.js';
-import Templates from '../../templates.js';
+import langs from '../../lang.js';
 
 function Translator() {
 	const [lang, setLang] = useState("braill")
-	const langs = Array.from(Object.keys(Templates.templates))
-	const langObj = Templates.templates[lang].lern;
+	const lango = JSON.parse(localStorage.getItem('langsList'))
+	const langsList = lango ? lango : Array.from(Object.keys(langs))
+	const objs = JSON.parse(localStorage.getItem('langs'))
+	const langObj = objs ? objs : langs[lang];
 	const cHandle = num => {
-		const index = langs.indexOf(lang)
-		const len = langs.length
+		const index = langsList.indexOf(lang)
+		const len = langsList.length
 		let ei = index+num
 		if ( ei >= len ) {
 			let ei = 0
-			setLang(langs[ei])
+			setLang(langsList[ei])
 			return
 		} else if (ei < 0) {
 			let ei = len-1
-			setLang(langs[ei])
+			setLang(langsList[ei])
 			return
 		}
-		setLang(langs[ei])
+		setLang(langsList[ei])
 	}
 	return (
 		<div>

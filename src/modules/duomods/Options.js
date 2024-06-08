@@ -1,9 +1,9 @@
 import React from "react";
 import TopBar from '../topbar.js';
-import Templates from "../../templates.js";
+import templates from "../../templates.js";
 
 function Options({ userData, profile, setProfile, setOptions }) {
-	const langs = Array.from(Object.keys(Templates.templates))
+	const langs = Array.from(Object.keys(templates))
 	const handleClick = () => {
 		const index = langs.indexOf(profile)
 		const len = langs.length
