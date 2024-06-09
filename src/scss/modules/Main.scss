@@ -9,6 +9,14 @@
     display:flex;
     flex-wrap: wrap;
 }
+#vertical {
+  display: flex;
+  flex-direction: vertical;
+}
+#horizontal {
+  display: flex;
+  flex-direction: horizontal;
+}
 @media (min-width: 550px) {
   .MainBox {
     display: flex;

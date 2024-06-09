@@ -5,6 +5,7 @@ import Translator from './sites/apps/translator.js';
 import Mods from './sites/apps/mods.js';
 import Main from './sites/main.js';
 import About from './sites/about.js';
+import Music from './sites/music.js';
 import Err from './sites/404.js';
 import Apps from './sites/apps.js';
 import TD from './sites/3d.js';
@@ -24,6 +25,7 @@ root.render(
 			<Route path="/apps/duo" element={<Duo />} />
 			<Route path="/apps/translator" element={<Translator />} />
 			<Route path="/apps/mods" element={<Mods />} />
+			<Route path="/music" element={<Music />} />
 			<Route path="/about" element={<About />} />
 			<Route path="/3d" element={<TD />} />
 			<Route path="/things" element={<Things />} />

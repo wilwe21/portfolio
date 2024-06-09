@@ -10,16 +10,19 @@ function Games() {
 	});
 	useEffect(() => {
 		localStorage.setItem('langsList', JSON.stringify(langsList))
-		const local = localStorage.getItem('langs')
-		if (local !== null) {
-			console.log("not null")
+		const local = JSON.parse(localStorage.getItem('langs'))
+		if (local === null) {
+			console.log("saving default list")
+			localStorage.setItem('langs', JSON.stringify({'braill': langs.braill, 'illuminati': langs.illuminati, 'enchant': langs.enchant}))
 		} else {
-			console.log('null')
+			console.log("adding to list")
 			let end = {}
 			for (const lang of langsList) {
+				console.log({[lang]: local[lang]})
+				end[lang] = local[lang] !== undefined ? local[lang] : langs[lang] !== undefined ? langs[lang] : ""
 				console.log(end)
-				end[lang] += local[lang] !== null ? local[lang] : langs[lang] !== null ? langs[lang] : ""
 			}
+			localStorage.setItem('langs', JSON.stringify(end))
 		}
 	}, [langsList])
 	return (
