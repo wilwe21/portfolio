@@ -1,6 +1,6 @@
-function streak( userData, setUserData, profile ) {
+function streak( userData, setUserData ) {
 	const date = new Date();
-	const ldn = new Date(userData[profile].streak.data);
+	const ldn = new Date(userData.streak.data);
 	console.log(date)
 	console.log(ldn);
 	if ( ldn.getFullYear() > date.getFullYear() ) {
@@ -30,7 +30,7 @@ function streak( userData, setUserData, profile ) {
 		const dat = `${dato.getFullYear()}-${dato.getMonth()+1}-${dato.getDate()}`;
 		setUserData({...userData, "streak": {"count": 0, "data": dat}});
 	}*/
-	console.log(userData[profile].streak.count);
+	console.log(userData.streak.count);
 };
 
 export default streak;

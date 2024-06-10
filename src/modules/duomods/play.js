@@ -11,7 +11,7 @@ function Play({ userData, setUserData, profile, setPlay }) {
 	const lang = JSON.parse(localStorage.getItem('langs'))[profile]
 	const CtwKey = () => `ctw-${les}`;
 	useEffect(() => {
-		setEnd(les > userData[profile].length);
+		setEnd(les > userData.length);
 	}, [les, userData])
 	const back = () => {
 		streak(userData, setUserData, profile);
@@ -23,7 +23,7 @@ function Play({ userData, setUserData, profile, setPlay }) {
 				<div> {back()} </div>
 			) : (
 				<div>
-					<TopBar left={userData?.streak?.count || 0} middle={`Lesson ${les}/${userData[profile].length}`} right={userData?.lives || 0} />
+					<TopBar left={userData?.streak?.count || 0} middle={`Lesson ${les}/${userData.length}`} right={userData?.lives || 0} />
 					<Ctw key={CtwKey()} userData={userData} setUserData={setUserData} lang={lang} word={word} les={les} setLes={setLes}/>
 				</div>
 			)}

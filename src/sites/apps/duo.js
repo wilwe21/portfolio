@@ -15,46 +15,25 @@ function Duo() {
 	});
 	useEffect(() => {
 		localStorage.setItem('profile', profile);
-		let storData = JSON.parse(localStorage.getItem('userData'));
-		console.log(storData)
-		if (storData !== null) {
-			console.log("storData not null")
-			console.log(storData[profile])
-			if (storData[profile] === undefined) {
-				console.log("profile don't exist")
-				storData[profile] = temp[profile]
-			}
-		} else {
-			storData = {}
-			storData[profile] = temp[profile]
-		}
-		console.log(JSON.stringify(storData))
-		setUserData(storData)
+		const data = JSON.parse(localStorage.getItem(profile))
+		console.log(data ? data : "chuj")
+		setUserData(data ? data : temp[profile] ? temp[profile] : temp.braill)
 	}, [profile]);
 	const [userData, setUserData] = useState(() => {
-		let storData = JSON.parse(localStorage.getItem('userData'));
-		if (storData !== null) {
-			if (storData[profile] === undefined) {
-				console.log("profile don't exist")
-				storData[profile] = temp[profile]
-			}
-		} else {
-			storData = {}
-			storData[profile] = temp[profile]
-		}
-		return storData 
+		let storData = JSON.parse(localStorage.getItem(profile));
+		return storData ? storData : temp[profile] ? temp[profile] : temp.braill 
 	});
 	const [play, setPlay] = useState(false);
 	const [options, setOptions] = useState(false);
 	useEffect(() => {
-		localStorage.setItem('userData', JSON.stringify(userData));
+		localStorage.setItem(profile, JSON.stringify(userData));
 	}, [userData]);
 	return (
 		<div>
 			{!play && !options &&
 			<div>
-				<TopBar left={userData[profile].streak?.count || 0} middle={`Welcome to ${userData[profile].logo}`} right={userData[profile].lives || 0} />
-				<Menu userData={userData[profile]} setPlay={setPlay} setOptions={setOptions}/>
+				<TopBar left={userData.streak?.count || 0} middle={`Welcome to ${userData.logo}`} right={userData.lives || 0} />
+				<Menu userData={userData} setPlay={setPlay} setOptions={setOptions}/>
 			</div>}
 			{play &&
 			<Play userData={userData} setUserData={setUserData} profile={profile} setPlay={setPlay}/>

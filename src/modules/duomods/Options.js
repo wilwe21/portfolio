@@ -3,7 +3,7 @@ import TopBar from '../topbar.js';
 import templates from "../../templates.js";
 
 function Options({ userData, profile, setProfile, setOptions }) {
-	const langs = Array.from(Object.keys(templates))
+	const langs = JSON.parse(localStorage.getItem('langsList'))
 	const handleClick = () => {
 		const index = langs.indexOf(profile)
 		const len = langs.length
@@ -18,10 +18,9 @@ function Options({ userData, profile, setProfile, setOptions }) {
 		setProfile(langs[ei])
 	}
 	const reset = () => {
-		localStorage.removeItem('braill')
-		localStorage.removeItem('enchant')
-		localStorage.removeItem('illuminati')
-		localStorage.removeItem('windings')
+		for (const lang of langs) {
+			localStorage.removeItem(lang)
+		}
 	}
 	return (
 		<div>
