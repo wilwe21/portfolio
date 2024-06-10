@@ -37,3 +37,18 @@
     order: 2;
   }
 }
+.ModArea {
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.Mod {
+  background: $bg;
+  color: $fg;
+  font-size: 15px;
+  border: 0px;
+  display: flex;
+  flex: 1;
+}
+
