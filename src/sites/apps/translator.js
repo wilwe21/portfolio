@@ -9,7 +9,7 @@ function Translator() {
 	const lango = JSON.parse(localStorage.getItem('langsList'))
 	const langsList = lango ? lango : Array.from(Object.keys(langs))
 	const objs = JSON.parse(localStorage.getItem('langs'))
-	const langObj = objs ? objs : langs[lang];
+	const langObj = objs[lang] ? objs[lang] : langs[lang] ? langs[lang] : {a: "Empty array"};
 	const cHandle = num => {
 		const index = langsList.indexOf(lang)
 		const len = langsList.length

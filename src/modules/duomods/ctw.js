@@ -3,7 +3,7 @@ import { generate } from 'random-words';
 import life from './lifes.js';
 import translate from './translate.js';
 
-function Ctw({key, userData, setUserData, word, les, setLes}) {
+function Ctw({key, userData, setUserData, lang, word, les, setLes}) {
 	const [ans, setAns] = useState("none");
 	const [options] = useState(() => {
 		const options = generate({exactly: 4, minLength: word.length, maxLength: word.length});
@@ -14,11 +14,11 @@ function Ctw({key, userData, setUserData, word, les, setLes}) {
 	});
 	let optionsEnd = []; 
 	for (let i = 0; i < options.length; i++) {
-		const NString = translate(options[i], userData.lern)
+		const NString = translate(options[i], lang)
 		optionsEnd.push(NString);
 	}
 	const clickHandle = (answer) => {
-		const comp = translate(word, userData.lern)
+		const comp = translate(word, lang)
 		if (ans === "good" || ans === "bad") {
 			return
 		}

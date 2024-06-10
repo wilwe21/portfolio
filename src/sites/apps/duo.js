@@ -33,10 +33,7 @@ function Duo() {
 	}, [profile]);
 	const [userData, setUserData] = useState(() => {
 		let storData = JSON.parse(localStorage.getItem('userData'));
-		console.log(storData)
 		if (storData !== null) {
-			console.log("storData not null")
-			console.log(storData[profile])
 			if (storData[profile] === undefined) {
 				console.log("profile don't exist")
 				storData[profile] = temp[profile]
@@ -45,7 +42,6 @@ function Duo() {
 			storData = {}
 			storData[profile] = temp[profile]
 		}
-		console.log(JSON.stringify(storData))
 		return storData 
 	});
 	const [play, setPlay] = useState(false);
@@ -58,10 +54,10 @@ function Duo() {
 			{!play && !options &&
 			<div>
 				<TopBar left={userData[profile].streak?.count || 0} middle={`Welcome to ${userData[profile].logo}`} right={userData[profile].lives || 0} />
-				<Menu userData={userData} setPlay={setPlay} setOptions={setOptions}/>
+				<Menu userData={userData[profile]} setPlay={setPlay} setOptions={setOptions}/>
 			</div>}
 			{play &&
-			<Play userData={userData} setUserData={setUserData} setPlay={setPlay}/>
+			<Play userData={userData} setUserData={setUserData} profile={profile} setPlay={setPlay}/>
 			}
 			{options &&
 			<Options userData={userData} profile={profile} setProfile={setProfile} setOptions={setOptions}/>
