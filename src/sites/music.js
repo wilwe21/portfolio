@@ -5,7 +5,7 @@ import Dbmusic from '../modules/musicdb.js';
 function Music() {
 	return (
 		<div>
-			<TopBar middle="chuj" />
+			<TopBar middle="Music" />
 			<div>
 				<div class="Mainbox">
 				<Dbmusic />

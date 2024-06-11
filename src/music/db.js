@@ -4,6 +4,7 @@ const musicDB = {
 	short: {
 		sans: {
 			name: "Megalowania but slow",
+			cover: 's',
 			sound: MegaLowania,
 			wave: MegaLowaniaWave,
 		},

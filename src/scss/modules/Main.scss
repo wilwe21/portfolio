@@ -9,14 +9,6 @@
     display:flex;
     flex-wrap: wrap;
 }
-#vertical {
-  display: flex;
-  flex-direction: vertical;
-}
-#horizontal {
-  display: flex;
-  flex-direction: horizontal;
-}
 @media (min-width: 550px) {
   .MainBox {
     display: flex;
@@ -51,4 +43,15 @@
   display: flex;
   flex: 1;
 }
-
+.MusicBox {
+  display: flex;
+  flex-direction: column;
+  & img {
+    height: 25vh;
+    width: 25vw;
+    paddin: $padding;
+  }
+  & audio {
+    padding: $padding;
+  }
+}
