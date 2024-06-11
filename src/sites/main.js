@@ -10,6 +10,7 @@ function Main() {
 				<Link to="/apps" class="Button">Apps</Link>
 				<Link to="/3d" class="Button">3D</Link>
 				<Link to="/music" class="Button">Music</Link>
+				<Link to="/art" class="Button">Art</Link>
 				<a href="https://wilwe.itch.io/" target="_blank" class="Button">Itch.io</a>
 				<a href="https://github.com/wilwe21" target="_blank" class="Button">GitHub</a>
 				<Link to="/about" class="Button">About Me</Link>
