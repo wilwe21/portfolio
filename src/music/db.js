@@ -6,7 +6,7 @@ const musicDB = {
 		{
 			name: "Megalowania but slow",
 			sound: MegaLowania,
-			wave: MegaLowaniaWave,
+			addown: MegaLowaniaWave,
 		},
 		{
 			name: "B",
