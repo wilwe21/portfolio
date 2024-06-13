@@ -1,14 +1,18 @@
 import MegaLowania from "./sound/sans.mp3";
+import bMp3 from "./sound/b.mp3";
 import MegaLowaniaWave from "./vital/sans.vital";
 const musicDB = {
-	short: {
-		sans: {
+	short: [
+		{
 			name: "Megalowania but slow",
-			cover: 's',
 			sound: MegaLowania,
 			wave: MegaLowaniaWave,
 		},
-	},
+		{
+			name: "B",
+			sound: bMp3,
+		}
+	],
 	medium: {},
 	long: {},
 }
