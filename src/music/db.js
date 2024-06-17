@@ -3,6 +3,7 @@ import MegaLowaniaWave from "./vital/sans.vital";
 import bMp3 from "./sound/b.mp3";
 import quest from "./sound/quest.mp3";
 import lulaby from "./sound/lulaby for dragon.mp3";
+import trumpet from "./sound/i broke my trumpet.mp3";
 
 const musicDB = {
 	short: [
@@ -15,6 +16,8 @@ const musicDB = {
 			name: "???",
 			sound: quest,
 		},
+	],
+	medium: [
 		{
 			name: "B",
 			sound: bMp3,
@@ -22,9 +25,12 @@ const musicDB = {
 		{
 			name: "Lulaby for Dragon",
 			sound: lulaby,
+		},
+		{
+			name: "I broke my trumpet",
+			sound: trumpet,
 		}
 	],
-	medium: {},
-	long: {},
+	long: [],
 }
 export default musicDB;
