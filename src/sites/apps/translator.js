@@ -27,13 +27,12 @@ function Translator() {
 	}
 	return (
 		<div>
-			<TopBar middle={lang} />
+			<TopBar left={<Link to="/apps" class="Button">Back</Link>} middle={lang} />
 			<div class="MainBox">
 				<ShowKeys lang={langObj} />
 			</div>
 			<div class="MainBox">
 				<div class="Button" onClick={() => cHandle(-1)}>Prev</div>
-				<Link to="/apps" class="Button">Back</Link>
 				<div class="Button" onClick={() => cHandle(1)}>Next</div>
 			</div>
 		</div>

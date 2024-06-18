@@ -7,12 +7,11 @@ import Rbox from '../3D/models/Rbox.js';
 function TD() {
 	return (
 		<div>
-			<TopBar left="✨" middle="Welcome" right="✨"/>
+			<TopBar left={<Link to="/" class="Button">Back</Link>} middle="Welcome" right=""/>
 			<div class="MainBox">
 				<Canvas>
 					<Rbox />
 				</Canvas>
-				<Link to="/" class="Button">Back</Link>
 			</div>
 		</div>
 	);

@@ -6,7 +6,7 @@ import langs from '../../lang.js'
 function Mods() {
 	return (
 		<div>
-			<TopBar middle="Mods" />
+			<TopBar left={<Link to="/apps" class="Button">Back</Link>} middle="Mods" />
 			<div>
 				<h2>Duo presest</h2>
 				<div class="ModArea">
@@ -18,9 +18,6 @@ function Mods() {
 				<div class="ModArea">
 					<textarea value={JSON.stringify(langs.braill).replace(/,/g, ",\n")} class="Mod" />
 				</div>
-			</div>
-			<div class="MainBox">
-				<Link to="/apps" class="Button">Back</Link>
 			</div>
 		</div>
 	)

@@ -27,12 +27,12 @@ function Games() {
 	}, [langsList])
 	return (
 		<div>
-			<TopBar left="" middle="Apps" right="" />
+			<TopBar left={<Link to="/" class="Button">Back</Link>} middle="Apps" right="" />
 			<div class="MainBox"> 
 				<Link to="/apps/duo" class="Button">Duo</Link>
 				<Link to="/apps/translator" class="Button">Translator</Link>
 				<Link to="/apps/mods" class="Button">Mods</Link>
-				<Link to="/" class="Button">Back</Link>
+				<Link to="/apps/track" class="Button">Tracker</Link>
 			</div>
 		</div>
 	);

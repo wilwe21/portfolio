@@ -5,7 +5,7 @@ function Art() {
 	console.log(artDb)
 	return (
 		<div>
-			<TopBar middle="Art" />
+			<TopBar left={<Link to="/" class="Button">Back</Link>} middle="Art" right="" />
 			<div class="MainBox">
 				{artDb.map((item) => (
 					<div>
@@ -13,9 +13,6 @@ function Art() {
 					<img src={item.img} />
 					</div>
 				))}
-			</div>
-			<div class="MainBox">
-				<Link to="/" class="Button">Back</Link>
 			</div>
 		</div>
 	)
