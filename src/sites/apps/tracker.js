@@ -1,10 +1,10 @@
 import TopBar from "../../modules/topbar.js"
-import { Link } from 'react-router-dom'
+import Back from "../../modules/back.js"
 
 function Track() {
 	return (
 		<div>
-			<TopBar left={<Link to="/apps" class="Button">Back</Link>} middle="Tracker" />
+			<TopBar left={Back("/apps")} middle="Tracker" />
 		</div>
 	)
 }

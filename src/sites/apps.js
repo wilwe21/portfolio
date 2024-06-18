@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import TopBar from '../modules/topbar';
+import TopBar from '../modules/topbar.js';
+import Back from '../modules/back.js';
 import langs from '../lang.js';
 
 function Games() {
@@ -27,7 +28,7 @@ function Games() {
 	}, [langsList])
 	return (
 		<div>
-			<TopBar left={<Link to="/" class="Button">Back</Link>} middle="Apps" right="" />
+			<TopBar left={Back()} middle="Apps" right="" />
 			<div class="MainBox"> 
 				<Link to="/apps/duo" class="Button">Duo</Link>
 				<Link to="/apps/translator" class="Button">Translator</Link>

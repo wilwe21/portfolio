@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
 import TopBar from "../modules/topbar.js"
+import Back from "../modules/back.js"
 import artDb from "../art/db.js"
 function Art() {
 	console.log(artDb)
 	return (
 		<div>
-			<TopBar left={<Link to="/" class="Button">Back</Link>} middle="Art" right="" />
+			<TopBar left={Back()} middle="Art" right="" />
 			<div class="MainBox">
 				{artDb.map((item) => (
 					<div>

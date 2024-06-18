@@ -1,9 +1,10 @@
 import TopBar from "../modules/topbar.js";
-import { Link } from "react-router-dom";
+import Back from "../modules/back.js";
+
 function Things() {
 	return (
 		<div>
-			<TopBar left={<Link to="/" class="Button">Back</Link>} middle="Smth" right=""/>
+			<TopBar left={Back()} middle="Smth" right=""/>
 			<h1 class="txt">
 				ℸ ̣𝙹 ᒷリᓵ⍑ᔑリℸ ̣ ᔑ ᓭ∴𝙹∷↸ ∴╎ℸ ̣⍑ ⎓╎∷ᒷ ᔑᓭ!¡ᒷᓵℸ ̣ ╎╎ ╎リ ᒲ╎リᒷᓵ∷ᔑ⎓ℸ ̣, ||𝙹⚍ꖎꖎ リᒷᒷ↸ ℸ ̣𝙹 ⎓𝙹ꖎꖎ𝙹∴ ᔑ ᓭ!¡ᒷᓵ╎⎓╎ᓵ !¡∷𝙹ᓵᒷᓭᓭ. ℸ ̣⍑╎ᓭ ╎リ⍊𝙹ꖎ⍊ᒷᓭ ⚍ᓭ╎リ⊣ ᔑリ⍊╎ꖎ ᔑリ↸ ⍑ᔑ⍊╎リ⊣ ℸ ̣⍑ᒷ リᒷᓵᒷᓭᓭᔑ∷|| ᒲᔑℸ ̣ᒷ∷╎ᔑꖎᓭ. ⍑ᒷ∷ᒷᓭ ᔑ ᓭℸ ̣ᒷ!¡-ʖ||-ᓭℸ ̣ᒷ!¡ ⊣⚍╎↸ᒷ 𝙹リ ⍑𝙹∴ ℸ ̣𝙹 ↸𝙹 ╎ℸ ̣:
 1. **⊣ᔑℸ ̣⍑ᒷ∷ ᒲᔑℸ ̣ᒷ∷╎ᔑꖎᓭ**: ||𝙹⚍ꖎꖎ リᒷᒷ↸ ℸ ̣⍑ᒷ ⎓𝙹ꖎꖎ𝙹∴╎リ⊣ ╎ℸ ̣ᒷᒲᓭ:

@@ -1,6 +1,18 @@
+.Button {
+  @include button();
+  font-size: 35px;
+  flex-grow: 1;
+  max-width: calc(100% - $padding*4);
+}
+.txt {
+  @include txt();
+}
 .TopBar {
   @include topbar();
-  justify-content: space-between;
+  & .BackButton {
+    @include button($flat: true);
+    color: $accent;
+  }
 }
 .Box {
   width: 100vw;
@@ -28,6 +40,10 @@
   #enter {
     order: 2;
   }
+}
+.txtCenter {
+  @include txt();
+  justify-content: center;
 }
 .ModArea {
   padding: $padding;

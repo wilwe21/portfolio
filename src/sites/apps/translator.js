@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import TopBar from '../../modules/topbar.js';
+import Back from "../../modules/back.js";
 import ShowKeys from '../../modules/duomods/keyboard.js';
 import langs from '../../lang.js';
 
@@ -27,7 +27,7 @@ function Translator() {
 	}
 	return (
 		<div>
-			<TopBar left={<Link to="/apps" class="Button">Back</Link>} middle={lang} />
+			<TopBar left={Back("/apps")} middle={lang} />
 			<div class="MainBox">
 				<ShowKeys lang={langObj} />
 			</div>

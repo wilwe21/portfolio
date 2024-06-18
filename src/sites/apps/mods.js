@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom'
 import TopBar from '../../modules/topbar.js'
+import Back from '../../modules/back.js'
 import template from '../../templates.js'
 import langs from '../../lang.js'
 
 function Mods() {
 	return (
 		<div>
-			<TopBar left={<Link to="/apps" class="Button">Back</Link>} middle="Mods" />
+			<TopBar left={Back("/apps")} middle="Mods" />
 			<div>
 				<h2>Duo presest</h2>
 				<div class="ModArea">

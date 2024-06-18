@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
 import TopBar from '../modules/topbar.js';
+import Back from '../modules/back.js'
 function Err() {
 	return (
 		<div>
-			<TopBar left={<Link to="/" class="Button">Back</Link>} middle="Error 404" right="" />
-			<h1>error idk</h1>
+			<TopBar left={Back()} middle="Error 404" right="" />
+			<h1 class="txtCenter">error idk</h1>
 		</div>
 	);
 }
