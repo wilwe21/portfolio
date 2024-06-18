@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2689060a.css",
-    "main.js": "/portfolio/static/js/main.ac000441.js",
+    "main.css": "/portfolio/static/css/main.3c29afe1.css",
+    "main.js": "/portfolio/static/js/main.7691d1a5.js",
     "static/media/i broke my trumpet.mp3": "/portfolio/static/media/i broke my trumpet.8852b08316c8c69485db.mp3",
     "static/media/b.mp3": "/portfolio/static/media/b.02fbaa21fb000f554094.mp3",
     "static/media/ballad from horses.mp3": "/portfolio/static/media/ballad from horses.0e788b04546a04324d79.mp3",
@@ -10,11 +10,11 @@
     "static/media/sans.vital": "/portfolio/static/media/sans.397b65523984d05d1e98.vital",
     "static/media/sans.mp3": "/portfolio/static/media/sans.aee4abdb30f2cf2a5094.mp3",
     "index.html": "/portfolio/index.html",
-    "main.2689060a.css.map": "/portfolio/static/css/main.2689060a.css.map",
-    "main.ac000441.js.map": "/portfolio/static/js/main.ac000441.js.map"
+    "main.3c29afe1.css.map": "/portfolio/static/css/main.3c29afe1.css.map",
+    "main.7691d1a5.js.map": "/portfolio/static/js/main.7691d1a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.2689060a.css",
-    "static/js/main.ac000441.js"
+    "static/css/main.3c29afe1.css",
+    "static/js/main.7691d1a5.js"
   ]
 }
