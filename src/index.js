@@ -14,13 +14,13 @@ import TD from './sites/3d.js';
 import Things from './sites/things.js';
 import "./scss/main.scss";
 
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { HashRouter, Routes, Route} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-	<BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+	<HashRouter>
 		<Routes>
 			<Route path="/" element={<Main />} />
 			<Route path="/apps" element={<Apps />} />
@@ -35,6 +35,6 @@ root.render(
 			<Route path="/things" element={<Things />} />
 			<Route path="*" element={<Err />} />
 		</Routes>
-	</BrowserRouter>
+	</HashRouter>
   </React.StrictMode>
 );
