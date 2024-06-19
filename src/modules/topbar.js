@@ -1,7 +1,10 @@
-function TopBar({left, middle, right}) {
+function TopBar({left, middle, right, tpcl}) {
 	var tpclass = "TopBar2"
-	if ( right != "" && right != null) {
+	if ( right !== "" && right != null) {
 		tpclass = "TopBar"
+	}
+	if (tpcl != null) {
+		tpclass = tpcl
 	}
 
 	return (

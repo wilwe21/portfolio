@@ -9,6 +9,7 @@
 }
 .TopBar {
   @include topbar($amount: 3);
+  min-width: calc(100vw - $padding*2);
   & .BackButton {
     @include button($flat: true);
     color: $accent;
@@ -16,6 +17,7 @@
 }
 .TopBar2 {
   @include topbar($amount: 2);
+  min-width: calc(100vw - $padding*2);
   & .BackButton {
     @include button($flat: true);
     color: $accent;
@@ -110,5 +112,27 @@
       min-width: 10vw;
       max-width: 30vw;
     }
+  }
+}
+.PopUpContainer {
+  position: absolute;
+  border: $border-width solid $border-color;
+  border-radius: $radii;
+  padding: $padding;
+  max-height: 70vh;
+  max-width: calc(90vw - $padding*4);
+  min-width: calc(90vw - $padding*4);
+  top: 15vh;
+  left: 5vw;
+  z-index: 1;
+}
+.TpPopup {
+  @include topbar($amount: 2);
+  & :nth-child(2){
+    margin-left: 10vw;
+  }
+  & .BackButton {
+    @include button($flat: true);
+    color: $accent;
   }
 }
