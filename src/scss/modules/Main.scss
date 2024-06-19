@@ -71,3 +71,37 @@
     padding: $padding;
   }
 }
+.TrackBox {
+  display: flex;
+  width: calc(100vw - $padding*4);
+  border: $border-width solid $border-color;
+  justify-content: space-between;
+  border-radius: $radii;
+  padding: $padding;
+  margin: $padding;
+  & :nth-child(1) {
+    //background: red;
+    min-width: 10vw;
+    border-right: $border-width solid $border-color;
+    margin-right: $padding;
+  }
+  & :nth-child(2) {
+    //background: green;
+    flex-grow: 1;
+    border-right: $border-width solid $border-color;
+    margin-right: $padding;
+  }
+  & :nth-child(3) {
+    @include button($flat: true);
+    display: flex;
+    //background: blue;
+    min-width: 10vw;
+    max-width: calc(10vw - padding*4);
+    & .InputButton {
+      @include button();
+      flex: 1;
+      min-width: 10vw;
+      max-width: 30vw;
+    }
+  }
+}
