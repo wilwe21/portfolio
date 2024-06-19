@@ -116,6 +116,7 @@
 }
 .PopUpContainer {
   position: absolute;
+  background: $bg;
   border: $border-width solid $border-color;
   border-radius: $radii;
   padding: $padding;
