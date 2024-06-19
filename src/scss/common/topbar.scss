@@ -1,4 +1,4 @@
-@mixin topbar($amount: 2){
+@mixin topbar($amount: 2, $popup: false){
   font-size: 30px;
   color: $accent;
   text-align: center;
@@ -24,6 +24,8 @@
   }
   & :nth-child(3), :nth-child(1) {
     //background: red;
-    max-width: 10vw;
+    @if not $popup {
+      min-width: 10vw;
+    }
   }
 }

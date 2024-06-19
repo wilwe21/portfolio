@@ -128,10 +128,8 @@
   z-index: 1;
 }
 .TpPopup {
-  @include topbar($amount: 2);
-  & :nth-child(2){
-    margin-left: 10vw;
-  }
+  @include topbar($amount: 2, $popup: true);
+  margin-left: 10vw;
   & .BackButton {
     @include button($flat: true);
     color: $accent;
