@@ -8,7 +8,14 @@
   @include txt();
 }
 .TopBar {
-  @include topbar();
+  @include topbar($amount: 3);
+  & .BackButton {
+    @include button($flat: true);
+    color: $accent;
+  }
+}
+.TopBar2 {
+  @include topbar($amount: 2);
   & .BackButton {
     @include button($flat: true);
     color: $accent;

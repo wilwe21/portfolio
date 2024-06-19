@@ -1,4 +1,4 @@
-@mixin topbar(){
+@mixin topbar($amount: 2){
   font-size: 30px;
   color: $accent;
   text-align: center;
@@ -7,11 +7,24 @@
   flex: 1;
   padding: $padding;
   border-bottom: 2px solid $spliter;
-  & :nth-child(2) {
-    flex: 1;
-    max-width: calc(100vw - 20vw - $padding*8)
+  @if $amount == 2 {
+    & :nth-child(2) {
+      //background: green;
+      flex: 1;
+      margin-right: 10vw;
+      max-width: calc(100vw - $padding*8)
+    }
+  }
+  @else if $amount == 3 {
+    :nth-child(2) {
+      //background: green;
+      flex: 1;
+      margin-right: 0px;
+      max-width: calc(100vw - $padding*8)
+    } 
   }
   & :nth-child(3), :nth-child(1) {
+    //background: red;
     max-width: 10vw;
   }
 }
