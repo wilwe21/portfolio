@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { SlFire } from "react-icons/sl";
+import { SlHeart } from "react-icons/sl";
 import TopBar from '../../modules/topbar.js';
 import Menu from '../../modules/duomods/Menu.js';
 import Play from '../../modules/duomods/play.js';
@@ -33,14 +35,14 @@ function Duo() {
 		<div>
 			{!play && !options &&
 			<div>
-				<TopBar left={<div class={streak(userData, setUserData, true, false)}>{userData.streak?.count}</div> || <div class="gray">0</div>} middle={`Welcome to ${userData.logo}`} right={userData.lives || 0} />
+				<TopBar left={<div class={streak(userData, setUserData, true, false)}>{userData.streak?.count}<SlFire class="fire" /></div> || <div class="gray">0<SlFire class="fire" /></div>} middle={`Welcome to ${userData.logo}`} right={<div class="heart">{userData.lives}<SlHeart class="heartIco" /></div> || <div class="heart">0<SlHeart class="heartIco" /></div>} />
 				<Menu userData={userData} setPlay={setPlay} setOptions={setOptions}/>
 			</div>}
 			{play &&
 			<Play userData={userData} setUserData={setUserData} profile={profile} setPlay={setPlay}/>
 			}
 			{options &&
-			<Options userData={userData} profile={profile} setProfile={setProfile} setOptions={setOptions}/>
+			<Options userData={userData} setUserData={setUserData} profile={profile} setProfile={setProfile} setOptions={setOptions}/>
 			}
 		</div>
 	)
