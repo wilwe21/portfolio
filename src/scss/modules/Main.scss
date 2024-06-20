@@ -1,5 +1,6 @@
 .Button {
   @include button();
+  word-wrap: break-word;
   font-size: 35px;
   flex-grow: 1;
   max-width: calc(100% - $padding*4);
