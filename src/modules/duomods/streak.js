@@ -8,10 +8,8 @@ function streak( userData, setUserData, check = false, reset = false ) {
 			streak(userData, setUserData, false, true)
 			return "gray"
 		} else if (ldnfor === form) {
-			console.log("streak today")
 			return "gray"
 		} else if (ldnfor > form) {
-			console.log("streak life")
 			return "red"
 		}
 	} else if (reset) {
@@ -26,18 +24,6 @@ function streak( userData, setUserData, check = false, reset = false ) {
 			setUserData({...userData, "streak": {"count": streak, "data": end}})
 		}
 	}
-	/*if ( ndnum === ldnum ){
-		date.setDate(date.getDate() + 1);
-		const streak = userData.streak.count + 1;
-		console.log(date.getFullYear(), date.getMonth()+1,date.getDate());
-		const dat = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
-		setUserData({...userData, "streak": {"count": streak, "data": dat}})
-	} else if ( ndnum > ldnum ) {
-		const dato = new Date();
-		console.log("chuj");
-		const dat = `${dato.getFullYear()}-${dato.getMonth()+1}-${dato.getDate()}`;
-		setUserData({...userData, "streak": {"count": 0, "data": dat}});
-	}*/
 };
 
 export default streak;

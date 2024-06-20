@@ -19,6 +19,9 @@ function Play({ userData, setUserData, profile, setPlay }) {
 		streak(userData, setUserData);
 		setPlay(false);
 	};
+	const exit = () => {
+		setPlay(false)
+	}
 	return (
 		<div>
 			{end ? (
@@ -26,7 +29,7 @@ function Play({ userData, setUserData, profile, setPlay }) {
 			) : (
 				<div>
 					<TopBar left={<div class={streak(userData, setUserData, true)}>{userData?.streak?.count}<SlFire class="fire" /></div> || <div class="gray">0<SlFire class="fire" /></div>} middle={`Lesson ${les}/${userData.length}`} right={<div class="heart">{userData.lives}<SlHeart class="heartIco" /></div> || <div class="heart">0<SlHeart class="heartIco" /></div>}  />
-					<Ctw key={CtwKey()} userData={userData} setUserData={setUserData} lang={lang} word={word} les={les} setLes={setLes}/>
+					<Ctw key={CtwKey()} userData={userData} setUserData={setUserData} lang={lang} word={word} les={les} setLes={setLes} exit={exit}/>
 				</div>
 			)}
 		</div>

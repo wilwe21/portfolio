@@ -1,33 +1,35 @@
-function check(one, two) {
-	return one.getTime() > two.getTime();
-};
 
 function life( userData, setUserData, amount ) {
-	const date = new Date();
-	let liv = userData.lives +amount;
-	const ldat = new Date(userData.ldat);
-	const max = userData.maxlives;
-	const add = () => {
-		ldat.setMinutes(ldat.getMinutes()+30);
-		if (check(date, ldat)) {
-			liv += 1;
-			setUserData({...userData, "lives": liv, "ldat": ldat});
-		} else {	
-			setUserData({...userData, "lives": liv});
+	let liv = userData.lives
+	const date = new Date()
+	const milfs = 30 * 60 * 1000
+	const ldat = userData.ldat ? new Date(userData.ldat) : date
+	const max = userData.maxlives
+	const set = () => {
+		let date2 = null
+		if (liv !== max) {
+			date2 = new Date(ldat.getTime() + milfs)
 		}
-	}
-	const remove = () => {
-		if ( userData.ldat === null ) {
-			setUserData({...userData, "lives": liv, "ldat": date});
-		} else {
-			setUserData({...userData, "lives": liv, "ldat": ldat});
+		if (liv > max) {
+			liv = max
 		}
+		console.log(date2)
+		setUserData({...userData, "lives": liv, "ldat": date2})	
 	}
-	if ( amount === 0) {
-		add();
-	} else {
-		remove();
+	if (ldat === null && amount === undefined) {
+		return
 	}
-};
+	if (ldat === null) {
+		console.log("null")
+	}
+	if (amount !== 0 && amount !== undefined) {
+		liv += amount
+		set()
+	}
+	if (ldat <= date) {
+		liv += 1
+		set()
+	}
+}
 
 export default life;

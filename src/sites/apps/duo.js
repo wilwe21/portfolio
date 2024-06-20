@@ -31,6 +31,7 @@ function Duo() {
 		localStorage.setItem(profile, JSON.stringify(userData));
 	}, [userData]);
 	streak(userData, setUserData, true, false)
+	lifes(userData, setUserData)
 	return (
 		<div>
 			{!play && !options &&

@@ -68,9 +68,22 @@
 .fire, .heartIco {
   margin-top: 5px;
   margin-bottom: -5px;
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: calc(-2vw + 2px);
+  margin-right: calc(-2vw + 2px);
 }
 .heart {
   color: $red;
+}
+.ded {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &> strong {
+    font-size: 30px;
+  }
+  &> img {
+    width: 40vw;
+    height: 60vh;
+  }
 }
