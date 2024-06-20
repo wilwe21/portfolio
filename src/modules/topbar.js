@@ -11,7 +11,7 @@ function TopBar({left, middle, right, tpcl}) {
 		<div class={tpclass}>
 			<div>{left}</div>
 			<div>{middle}</div>
-			<div>{right}</div>
+			{right && <div>{right}</div>}
 		</div>
 	)
 }
