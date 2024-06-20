@@ -16,12 +16,9 @@ function Games() {
 			console.log("saving default list")
 			localStorage.setItem('langs', JSON.stringify({'braill': langs.braill, 'illuminati': langs.illuminati, 'enchant': langs.enchant}))
 		} else {
-			console.log("adding to list")
 			let end = {}
 			for (const lang of langsList) {
-				console.log({[lang]: local[lang]})
 				end[lang] = local[lang] !== undefined ? local[lang] : langs[lang] !== undefined ? langs[lang] : ""
-				console.log(end)
 			}
 			localStorage.setItem('langs', JSON.stringify(end))
 		}

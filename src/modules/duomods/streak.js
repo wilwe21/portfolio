@@ -1,22 +1,34 @@
-function streak( userData, setUserData ) {
-	const date = new Date();
-	const ldn = new Date(userData.streak.data);
+function streak( userData, setUserData, check = false, reset = false ) {
+	const date = new Date()
+	const form = date.toISOString().slice(0,10).replace(/-/g,"")
+	const ldn = new Date(userData.streak.data)
+	const ldnfor = ldn.toISOString().slice(0,10).replace(/-/g,"")
 	console.log(date)
-	console.log(ldn);
-	if ( ldn.getFullYear() > date.getFullYear() ) {
-		console.log("new year");
-	} else if ( date.getFullYear() > ldn.getFullYear() ){
-		console.log("streak lost on new year")
-	} else if ( ldn.getMonth() > date.getMonth() ) {
-		console.log("new month")
-	} else if ( date.getMonth() > ldn.getMonth() ){
-		console.log("streak lost on new month")
-	} else if ( ldn.getDate() > date.getDate() ) {
-		console.log("new day")
-	} else if ( date.getDate() > ldn.getDate() ){
-		console.log("streak lost on random day")
+	console.log(ldn)
+	console.log(ldnfor)
+	console.log(form)
+	if (check) {
+		if (ldnfor < form) {
+			console.log("reset")
+			return "gray"
+		} else if (ldnfor === form) {
+			console.log("streak today")
+			return "gray"
+		} else if (ldnfor > form) {
+			console.log("streak life")
+			return "red"
+		}
+	} else if (reset) {
+		console.log("force Reset")	
 	} else {
-		console.log("wtf")
+		console.log("smth else")	
+		if (ldnfor <= form) {
+			console.log("streak Up")
+			date.setDate(date.getDate() +1);
+			const end = date.toISOString().slice(0,10)
+			const streak = userData.streak.count + 1;
+			setUserData({...userData, "streak": {"count": streak, "data": end}})
+		}
 	}
 	/*if ( ndnum === ldnum ){
 		date.setDate(date.getDate() + 1);
@@ -30,7 +42,6 @@ function streak( userData, setUserData ) {
 		const dat = `${dato.getFullYear()}-${dato.getMonth()+1}-${dato.getDate()}`;
 		setUserData({...userData, "streak": {"count": 0, "data": dat}});
 	}*/
-	console.log(userData.streak.count);
 };
 
 export default streak;
