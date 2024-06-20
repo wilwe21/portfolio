@@ -1,5 +1,6 @@
 import mittens from "./img/mittens.png"
 import graymittens from "./img/graymittens.png"
+import idk from "./img/idk.png"
 
 const artDb = [
 	{
@@ -9,6 +10,10 @@ const artDb = [
 	{
 		name: "gray Mittens",
 		img: graymittens
+	},
+	{
+		name: "Some type of creature idk",
+		img: idk
 	}
 ]
 
