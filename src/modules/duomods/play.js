@@ -14,7 +14,7 @@ function Play({ userData, setUserData, profile, setPlay }) {
 		setEnd(les > userData.length);
 	}, [les, userData])
 	const back = () => {
-		streak(userData, setUserData, profile);
+		streak(userData, setUserData);
 		setPlay(false);
 	};
 	return (

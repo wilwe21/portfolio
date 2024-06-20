@@ -28,7 +28,7 @@ function Duo() {
 	useEffect(() => {
 		localStorage.setItem(profile, JSON.stringify(userData));
 	}, [userData]);
-	streak(userData, setUserData, false, false)
+	streak(userData, setUserData, true, false)
 	return (
 		<div>
 			{!play && !options &&

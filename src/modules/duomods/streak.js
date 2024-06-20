@@ -3,13 +3,9 @@ function streak( userData, setUserData, check = false, reset = false ) {
 	const form = date.toISOString().slice(0,10).replace(/-/g,"")
 	const ldn = new Date(userData.streak.data)
 	const ldnfor = ldn.toISOString().slice(0,10).replace(/-/g,"")
-	console.log(date)
-	console.log(ldn)
-	console.log(ldnfor)
-	console.log(form)
 	if (check) {
 		if (ldnfor < form) {
-			console.log("reset")
+			streak(userData, setUserData, false, true)
 			return "gray"
 		} else if (ldnfor === form) {
 			console.log("streak today")
@@ -19,11 +15,11 @@ function streak( userData, setUserData, check = false, reset = false ) {
 			return "red"
 		}
 	} else if (reset) {
-		console.log("force Reset")	
+		const end = date.toISOString().slice(0,10)
+		const streak = 0
+		setUserData({...userData, "streak": {"count": streak, "data": end}})
 	} else {
-		console.log("smth else")	
 		if (ldnfor <= form) {
-			console.log("streak Up")
 			date.setDate(date.getDate() +1);
 			const end = date.toISOString().slice(0,10)
 			const streak = userData.streak.count + 1;
