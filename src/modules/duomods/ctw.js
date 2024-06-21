@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { generate } from 'random-words';
 import life from './lifes.js';
 import translate from './translate.js';
-import mega from '../../oi/mega.jpg';
 
 function Ctw({key, userData, setUserData, lang, word, les, setLes, exit}) {
 	const [ans, setAns] = useState("none");
@@ -45,13 +44,6 @@ function Ctw({key, userData, setUserData, lang, word, les, setLes, exit}) {
 	}
 	return (
 		<div>
-			{userData.lives <= 0 ?
-			<div class="ded">
-				<strong>No lifes?</strong>
-				<img src={mega} />
-				<div class="Button" onClick={() => exit()}>Back</div>
-			</div>
-			:
 			<>
 			<div class="word" id={ans}>
 				{word} 
@@ -74,7 +66,6 @@ function Ctw({key, userData, setUserData, lang, word, les, setLes, exit}) {
 			{ans !== "none" && <div class="Button" onClick={goNext}>Next</div>}
 			</div>
 			</>
-			}
 		</div>
 	);
 };
