@@ -13,7 +13,6 @@ function life( userData, setUserData, amount ) {
 		if (liv > max) {
 			liv = max
 		}
-		console.log(date2)
 		setUserData({...userData, "lives": liv, "ldat": date2})	
 	}
 	if (ldat === null && amount === undefined) {

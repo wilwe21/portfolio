@@ -5,6 +5,7 @@ import translate from './translate.js';
 
 function Ctw({key, userData, setUserData, lang, word, les, setLes, exit}) {
 	const [ans, setAns] = useState("none");
+	const tw = translate(word, lang)
 	const [options] = useState(() => {
 		const options = generate({exactly: 4, minLength: word.length, maxLength: word.length});
 		if (!(options.includes(word))) {
@@ -12,13 +13,9 @@ function Ctw({key, userData, setUserData, lang, word, les, setLes, exit}) {
 		};
 		return options;
 	});
-	let optionsEnd = []; 
-	for (let i = 0; i < options.length; i++) {
-		const NString = translate(options[i], lang)
-		optionsEnd.push(NString);
-	}
+	let optionsEnd = [...options]; 
 	const clickHandle = (answer) => {
-		const comp = translate(word, lang)
+		const comp = word
 		if (ans === "good" || ans === "bad") {
 			return
 		}
@@ -46,7 +43,7 @@ function Ctw({key, userData, setUserData, lang, word, les, setLes, exit}) {
 		<div>
 			<>
 			<div class="word" id={ans}>
-				{word} 
+				{tw} 
 			</div>
 			<div class="ansBox1">
 			{optionsEnd.splice(0,2).map(item => (
