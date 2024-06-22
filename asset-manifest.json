@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.430a7fdc.css",
-    "main.js": "/portfolio/static/js/main.f466ec97.js",
+    "main.js": "/portfolio/static/js/main.74a69867.js",
     "static/media/i broke my trumpet.mp3": "/portfolio/static/media/i broke my trumpet.8852b08316c8c69485db.mp3",
     "static/media/b.mp3": "/portfolio/static/media/b.02fbaa21fb000f554094.mp3",
     "static/media/ballad from horses.mp3": "/portfolio/static/media/ballad from horses.0e788b04546a04324d79.mp3",
     "static/media/lulaby for dragon.mp3": "/portfolio/static/media/lulaby for dragon.a3686540572a347f9d9d.mp3",
+    "static/media/gambledylan.mp3": "/portfolio/static/media/gambledylan.418a7520315eeea38ac5.mp3",
     "static/media/quest.mp3": "/portfolio/static/media/quest.7b83be91e34975bb0664.mp3",
     "static/media/sans.vital": "/portfolio/static/media/sans.397b65523984d05d1e98.vital",
     "static/media/sans.mp3": "/portfolio/static/media/sans.aee4abdb30f2cf2a5094.mp3",
     "static/media/mega.jpg": "/portfolio/static/media/mega.310bbbeaab455d686085.jpg",
     "index.html": "/portfolio/index.html",
     "main.430a7fdc.css.map": "/portfolio/static/css/main.430a7fdc.css.map",
-    "main.f466ec97.js.map": "/portfolio/static/js/main.f466ec97.js.map"
+    "main.74a69867.js.map": "/portfolio/static/js/main.74a69867.js.map"
   },
   "entrypoints": [
     "static/css/main.430a7fdc.css",
-    "static/js/main.f466ec97.js"
+    "static/js/main.74a69867.js"
   ]
 }
