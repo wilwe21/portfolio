@@ -8,6 +8,7 @@ function Mods() {
 		<div>
 			<TopBar left={Back("/apps")} middle="Mods" />
 			<div>
+				<h1 class="heart">Don't work yet</h1>
 				<h2>Duo presest</h2>
 				<div class="ModArea">
 					<textarea value={JSON.stringify(template.braill).replace(/,/g, ",\n")} class="Mod" height="300" />
