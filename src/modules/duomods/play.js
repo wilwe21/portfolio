@@ -12,7 +12,7 @@ function Play({ userData, setUserData, profile, setPlay }) {
 	const [les, setLes] = useState(1)
 	const [end, setEnd] = useState(false)
 	const modes = ["ctw", "cnw"]
-	const pik = modes[Math.floor(Math.random() * modes.length)]
+	const pik = useMemo(() => modes[Math.floor(Math.random() * modes.length)], [les])
 	const word = useMemo(() => generate(), [les]) 
 	const lang = JSON.parse(localStorage.getItem('langs'))[profile]
 	const key = () => `key-${les}`
