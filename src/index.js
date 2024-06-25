@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Duo from './sites/apps/duo.js';
 import Translator from './sites/apps/translator.js';
 import Mods from './sites/apps/mods.js';
+import Dni from './sites/apps/dni.js';
 import Tracker from './sites/apps/tracker.js';
 import Main from './sites/main.js';
 import About from './sites/about.js';
@@ -28,6 +29,7 @@ root.render(
 			<Route path="/apps/translator" element={<Translator />} />
 			<Route path="/apps/mods" element={<Mods />} />
 			<Route path="/apps/track" element={<Tracker />} />
+			<Route path="/apps/dni" element={<Dni />} />
 			<Route path="/music" element={<Music />} />
 			<Route path="/art" element={<Art />} />
 			<Route path="/about" element={<About />} />

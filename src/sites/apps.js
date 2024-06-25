@@ -31,6 +31,7 @@ function Games() {
 				<Link to="/apps/translator" class="Button">Translator</Link>
 				<Link to="/apps/mods" class="Button">Mods</Link>
 				<Link to="/apps/track" class="Button">Tracker</Link>
+				<Link to="/apps/dni" class="Button">Dni</Link>
 			</div>
 		</div>
 	);
