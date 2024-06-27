@@ -1,5 +1,3 @@
-import { useState, useEffect} from 'react'
-
 function Truck({ data, setData }) {
 	const Remove = (who) => {
 		if (who > -1) {
@@ -16,26 +14,24 @@ function Truck({ data, setData }) {
 		}
 	}
 	return (
-		<>
-			<div class="MainBox">
-				{data.map(key => (
-					<div class="TrackBox">
-						<strong>
-							{key.name}
-						</strong>
-						<strong class="text">
-							{key.value}{key.currency ? key.currency : ""}
-						</strong>
-						<div>
-						<input class="InputButton" id={data.indexOf(key)} type="number" />
-						<div onClick={() => Remove(data.indexOf(key))}>
-							add
-						</div>
-						</div>
+		<div class="MainBox">
+			{data.map(key => (
+				<div class="TrackBox">
+					<strong>
+						{key.name}
+					</strong>
+					<strong class="text">
+						{key.value}{key.currency ? key.currency : ""}
+					</strong>
+					<div>
+					<input class="InputButton" id={data.indexOf(key)} type="number" />
+					<div onClick={() => Remove(data.indexOf(key))}>
+						add
 					</div>
-				))}
-			</div>
-		</>
+					</div>
+				</div>
+			))}
+		</div>
 	)
 }
 
