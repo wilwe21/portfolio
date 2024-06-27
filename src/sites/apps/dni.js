@@ -44,6 +44,7 @@ function Dni() {
 				<div class="MainBox">
 					<input
 						id="Add days"
+						type="Number"
 						class="Button"
 						placeholder="days"
 					/>

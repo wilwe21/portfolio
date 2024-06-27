@@ -105,14 +105,28 @@
     @include button($flat: true);
     display: flex;
     //background: blue;
-    min-width: 10vw;
-    max-width: calc(10vw - padding*4);
+    min-width: 5vw;
+    max-width: calc(5vw - padding*4);
     & .InputButton {
       @include button();
       flex: 1;
       min-width: 10vw;
       max-width: 30vw;
     }
+  }
+  & :nth-child(4) {
+    @include button($flat: true);
+    display: flex;
+    //background: blue;
+    min-width: 5vw;
+    max-width: calc(5vw - padding*4);
+    & .InputButton {
+      @include button();
+      flex: 1;
+      min-width: 10vw;
+      max-width: 30vw;
+    }
+
   }
 }
 .PopUpContainer {
