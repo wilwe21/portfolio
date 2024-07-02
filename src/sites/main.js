@@ -34,7 +34,7 @@ function Main() {
 				<h2 class="info" id="AboutInfo">More Informations About Me</h2> 
 				<Link to="/things" class="Button" id="Random">Random</Link>
 				<h2 class="info" id="RandomInfo">Random Stuff from me (change when i want and it's on random moment)</h2> 
-				<a href="https://youtu.be/8nF8PvNmuCc?si=PMgTC3_EtqBte6h5" title="My favorite color is 12" target="_blank" class="Button" id="Burgir">I'm really excited about burger</a>
+				<a href="https://youtu.be/igVIfT5dF-U?si=omtaSakoSFMVp9hv" title="Don't eat Keanu Reeves" target="_blank" class="Button" id="Burgir">Don't eat laws of thermodynamic</a>
 			</div>
 		</div>
 	);
