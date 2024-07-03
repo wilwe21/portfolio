@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a2e3557a.css",
-    "main.js": "/portfolio/static/js/main.bf2a34af.js",
+    "main.js": "/portfolio/static/js/main.c0924229.js",
     "static/media/i broke my trumpet.mp3": "/portfolio/static/media/i broke my trumpet.8852b08316c8c69485db.mp3",
     "static/media/b.mp3": "/portfolio/static/media/b.02fbaa21fb000f554094.mp3",
     "static/media/ballad from horses.mp3": "/portfolio/static/media/ballad from horses.0e788b04546a04324d79.mp3",
@@ -15,6 +15,6 @@
   },
   "entrypoints": [
     "static/css/main.a2e3557a.css",
-    "static/js/main.bf2a34af.js"
+    "static/js/main.c0924229.js"
   ]
 }
