@@ -15,7 +15,7 @@ import TD from './sites/3d.js';
 import Things from './sites/things.js';
 import "./scss/main.scss";
 
-import { HashRouter, Routes, Route} from "react-router-dom";
+import { HashRouter, Routes, Outlet, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
