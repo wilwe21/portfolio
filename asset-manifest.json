@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0702b445.css",
-    "main.js": "/portfolio/static/js/main.06f599d2.js",
+    "main.js": "/portfolio/static/js/main.e26851f6.js",
     "static/media/portfolio.ogg": "/portfolio/static/media/portfolio.34ec47209b3c18c2e6d6.ogg",
-    "static/media/i broke my trumpet.mp3": "/portfolio/static/media/i broke my trumpet.8852b08316c8c69485db.mp3",
-    "static/media/b.mp3": "/portfolio/static/media/b.02fbaa21fb000f554094.mp3",
-    "static/media/ballad from horses.mp3": "/portfolio/static/media/ballad from horses.0e788b04546a04324d79.mp3",
-    "static/media/lulaby for dragon.mp3": "/portfolio/static/media/lulaby for dragon.a3686540572a347f9d9d.mp3",
-    "static/media/gambledylan.mp3": "/portfolio/static/media/gambledylan.418a7520315eeea38ac5.mp3",
-    "static/media/quest.mp3": "/portfolio/static/media/quest.7b83be91e34975bb0664.mp3",
+    "static/media/i broke my trumpet.mp3": "/portfolio/static/media/i broke my trumpet.ee630d2ad4211e82a3b1.mp3",
+    "static/media/b.mp3": "/portfolio/static/media/b.a939d44e12c3ea8baf21.mp3",
+    "static/media/ballad from horses.mp3": "/portfolio/static/media/ballad from horses.0cc8a651f3f9432a81f4.mp3",
+    "static/media/lulaby for dragon.mp3": "/portfolio/static/media/lulaby for dragon.b02dda3e6c7e295de370.mp3",
+    "static/media/gambledylan.mp3": "/portfolio/static/media/gambledylan.0590d83cd2f646962c5e.mp3",
+    "static/media/A.F.K.mp3": "/portfolio/static/media/A.F.K.71ee5d88aa27aa083d98.mp3",
+    "static/media/quest.mp3": "/portfolio/static/media/quest.b2e78321b62052e58d04.mp3",
     "static/media/sans.vital": "/portfolio/static/media/sans.397b65523984d05d1e98.vital",
-    "static/media/sans.mp3": "/portfolio/static/media/sans.aee4abdb30f2cf2a5094.mp3",
+    "static/media/sans.mp3": "/portfolio/static/media/sans.eef6292fe721593c5948.mp3",
     "static/media/mega.jpg": "/portfolio/static/media/mega.310bbbeaab455d686085.jpg",
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
     "static/css/main.0702b445.css",
-    "static/js/main.06f599d2.js"
+    "static/js/main.e26851f6.js"
   ]
 }
