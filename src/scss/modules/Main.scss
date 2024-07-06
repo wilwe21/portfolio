@@ -47,17 +47,20 @@
     grid-auto-flow: row;
     grid-template-areas:
         "Apps AppsInfo"
-        "TDInfo TD"
-        "Music MusicInfo"
-        "ArtInfo Art"
-        "About AboutInfo"
-        "GitInfo Git"
-        "Itch ItchInfo"
-        "RandomInfo Random"
+        "ScriptsInfo Scripts"
+        "TD TDInfo"
+        "MusicInfo Music"
+        "Art ArtInfo"
+        "AboutInfo About"
+        "Git GitInfo"
+        "ItchInfo Itch"
+        "Random RandomInfo"
         "Burgir Burgir";
     }
     #AppsInfo { grid-area: AppsInfo; }
     #Apps { grid-area: Apps; }
+    #ScriptsInfo { grid-area: ScriptsInfo; }
+    #Scripts { grid-area: Scripts; }
     #TDInfo { grid-area: TDInfo; }
     #TD { grid-area: TD; }
     #MusicInfo { grid-area: MusicInfo; }

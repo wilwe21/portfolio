@@ -20,6 +20,8 @@ function Main() {
 			<div class="MainBox" id="invd">
 				<Link to="/apps" class="Button" id="Apps">Apps</Link>
 				<h2 class="info" id="AppsInfo">Javascript React apps that i created</h2> 
+				<Link to="/scripts" class="Button" id="Scripts">Scripts</Link>
+				<h2 class="info" id="ScriptsInfo">Linux and Nautilus scripts</h2> 
 				<Link to="/3d" class="Button" id="3D">3D</Link>
 				<h2 class="info" id="TDInfo">My 3D Models (Under construction)</h2> 
 				<Link to="/music" class="Button" id="Music">Music</Link>
