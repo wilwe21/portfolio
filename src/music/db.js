@@ -6,6 +6,7 @@ import lulaby from "./sound/lulaby for dragon.mp3";
 import trumpet from "./sound/i broke my trumpet.mp3";
 import ballad from "./sound/ballad from horses.mp3";
 import GambleDylan from "./sound/gambledylan.mp3";
+import afk from "./sound/A.F.K.mp3";
 
 const musicDB = {
 	short: [
@@ -17,6 +18,10 @@ const musicDB = {
 		{
 			name: "???",
 			sound: quest,
+		},
+		{
+			name: "A.F.K",
+			sound: afk,
 		},
 	],
 	medium: [
