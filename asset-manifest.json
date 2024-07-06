@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a2e3557a.css",
-    "main.js": "/portfolio/static/js/main.285b9a52.js",
+    "main.css": "/portfolio/static/css/main.0702b445.css",
+    "main.js": "/portfolio/static/js/main.06f599d2.js",
     "static/media/portfolio.ogg": "/portfolio/static/media/portfolio.34ec47209b3c18c2e6d6.ogg",
     "static/media/i broke my trumpet.mp3": "/portfolio/static/media/i broke my trumpet.8852b08316c8c69485db.mp3",
     "static/media/b.mp3": "/portfolio/static/media/b.02fbaa21fb000f554094.mp3",
@@ -15,7 +15,7 @@
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.a2e3557a.css",
-    "static/js/main.285b9a52.js"
+    "static/css/main.0702b445.css",
+    "static/js/main.06f599d2.js"
   ]
 }
