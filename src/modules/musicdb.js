@@ -1,14 +1,10 @@
 import musicDB from "../music/db.js";
 import print from "./mspr.js";
-function Dbmusic() {
+function Dbmusic({ album }) {
 	return (
 		<div class="MusicBox">
-			<h1>Short</h1>
-			{musicDB.short.map(key => print(key))}
-			<h1>Medium</h1>
-			{musicDB.medium.map(key => print(key))}
-			<h1>Long</h1>
-			{musicDB.long.map(key => print(key))}
+			<h3>Album: {album}</h3>
+			{musicDB[album].map(key => print(key))}
 		</div>
 	);
 }

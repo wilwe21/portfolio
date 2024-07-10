@@ -9,7 +9,7 @@ import GambleDylan from "./sound/gambledylan.mp3";
 import afk from "./sound/A.F.K.mp3";
 
 const musicDB = {
-	short: [
+	Random: [
 		{
 			name: "Megalowania but slow",
 			sound: MegaLowania,
@@ -23,8 +23,6 @@ const musicDB = {
 			name: "A.F.K",
 			sound: afk,
 		},
-	],
-	medium: [
 		{
 			name: "B",
 			sound: bMp3,
@@ -45,8 +43,12 @@ const musicDB = {
 			name: "Dylan GambleCore",
 			sound: GambleDylan,
 		}
-
 	],
-	long: [],
+	sus: [
+		{
+			name: "Dylan GambleCore",
+			sound: GambleDylan,
+		}
+	]
 }
 export default musicDB;
