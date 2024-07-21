@@ -1,23 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0702b445.css",
-    "main.js": "/portfolio/static/js/main.41cec5a1.js",
+    "main.js": "/portfolio/static/js/main.2fc32cf1.js",
     "static/media/portfolio.ogg": "/portfolio/static/media/portfolio.34ec47209b3c18c2e6d6.ogg",
     "static/media/dots.ogg": "/portfolio/static/media/dots.bab7b98a9c2c452dbf81.ogg",
-    "static/media/i broke my trumpet.mp3": "/portfolio/static/media/i broke my trumpet.ee630d2ad4211e82a3b1.mp3",
-    "static/media/b.mp3": "/portfolio/static/media/b.a939d44e12c3ea8baf21.mp3",
-    "static/media/ballad from horses.mp3": "/portfolio/static/media/ballad from horses.0cc8a651f3f9432a81f4.mp3",
-    "static/media/lulaby for dragon.mp3": "/portfolio/static/media/lulaby for dragon.b02dda3e6c7e295de370.mp3",
-    "static/media/gambledylan.mp3": "/portfolio/static/media/gambledylan.0590d83cd2f646962c5e.mp3",
-    "static/media/A.F.K.mp3": "/portfolio/static/media/A.F.K.71ee5d88aa27aa083d98.mp3",
-    "static/media/quest.mp3": "/portfolio/static/media/quest.b2e78321b62052e58d04.mp3",
-    "static/media/sans.vital": "/portfolio/static/media/sans.397b65523984d05d1e98.vital",
-    "static/media/sans.mp3": "/portfolio/static/media/sans.eef6292fe721593c5948.mp3",
+    "static/media/Beginin(Demo).mp3": "/portfolio/static/media/Beginin(Demo).bc3404937cdef3fbefe3.mp3",
     "static/media/mega.jpg": "/portfolio/static/media/mega.310bbbeaab455d686085.jpg",
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
     "static/css/main.0702b445.css",
-    "static/js/main.41cec5a1.js"
+    "static/js/main.2fc32cf1.js"
   ]
 }
