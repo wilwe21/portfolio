@@ -5,8 +5,8 @@ import Dbmusic from '../modules/musicdb.js';
 import musicDB from "../music/db.js";
 
 function Music() {
-	const [current, setCurrent] = useState("Random")
 	const albums = Object.keys(musicDB)
+	const [current, setCurrent] = useState(albums[albums.length - 1])
 	const next = () => {
 		const ind = albums.indexOf(current)
 		const max = albums.length
