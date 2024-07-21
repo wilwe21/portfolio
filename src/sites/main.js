@@ -9,7 +9,7 @@ function Main() {
 			<div class="MainBox" id="invm">
 				<Link to="/apps" class="Button" id="Apps">Apps</Link>
 				<Link to="/3d" class="Button" id="TD">3D</Link>
-				<Link to="/music" class="Button" id="Music">Music</Link>
+				<Link to="/music" class="Button" id="Music">Soundscape Diary</Link>
 				<Link to="/art" class="Button" id="Art">Art</Link>
 				<a href="https://wilwe.itch.io/" target="_blank" class="Button" id="Itch">Itch.io</a>
 				<a href="https://github.com/wilwe21" target="_blank" class="Button" id="Git">GitHub</a>
@@ -24,7 +24,7 @@ function Main() {
 				<h2 class="info" id="ScriptsInfo">Linux and Nautilus scripts</h2> 
 				<Link to="/3d" class="Button" id="3D">3D</Link>
 				<h2 class="info" id="TDInfo">My 3D Models (Under construction)</h2> 
-				<Link to="/music" class="Button" id="Music">Music</Link>
+				<Link to="/music" class="Button" id="Music">Soundscape Diary</Link>
 				<h2 class="info" id="MusicInfo">Music that i created (Not best but yes)</h2> 
 				<Link to="/art" class="Button" id="Art">Art</Link>
 				<h2 class="info" id="ArtInfo">My artwork</h2> 
