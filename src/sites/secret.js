@@ -1,12 +1,12 @@
-import { Canvas } from '@react-three/fiber'
+import car from "../secret/carousel.wav"
+import TopBar from "../modules/topbar.js"
+import Back from "../modules/back.js"
 
 function Secret() {
 	return(
 		<>
-		<Canvas>
-			<ambientLight intensity={0.5} />
-			<pointLight position={[10, 10, 10]} />
-		</Canvas>
+			<TopBar left={Back()} middle="Super Secret Room" />
+			<audio src={car} controls={true}/>
 		</>
 	)
 }
