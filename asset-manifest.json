@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0702b445.css",
-    "main.js": "/portfolio/static/js/main.8d46b8a8.js",
+    "main.js": "/portfolio/static/js/main.e485c64a.js",
     "static/media/portfolio.ogg": "/portfolio/static/media/portfolio.34ec47209b3c18c2e6d6.ogg",
     "static/media/dots.ogg": "/portfolio/static/media/dots.bab7b98a9c2c452dbf81.ogg",
     "static/media/carousel.wav": "/portfolio/static/media/carousel.db10ac311309ec5054ea.wav",
-    "static/media/Beginin(Demo).mp3": "/portfolio/static/media/Beginin(Demo).bc3404937cdef3fbefe3.mp3",
+    "static/media/Beginin(Demo).mp3": "/portfolio/static/media/Beginin(Demo).6a36153ab2163ba54157.mp3",
     "static/media/mega.jpg": "/portfolio/static/media/mega.310bbbeaab455d686085.jpg",
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
     "static/css/main.0702b445.css",
-    "static/js/main.8d46b8a8.js"
+    "static/js/main.e485c64a.js"
   ]
 }
