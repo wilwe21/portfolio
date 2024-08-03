@@ -8,6 +8,11 @@
 .txt {
   @include txt();
 }
+.center {
+  //@include txt();
+  width: 100vw;
+  text-justify: center;
+}
 .TopBar {
   @include topbar($amount: 3);
   min-width: calc(100vw - $padding*2);
