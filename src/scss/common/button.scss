@@ -24,6 +24,12 @@
 
 @mixin button($flat: false, $reactive: true, $radii: $radii, $focusable: true){
     all: unset;
+    ::before {
+      background: red;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+    }
     border-radius: $radii;
     color: $fg;
     cursor: pointer;
