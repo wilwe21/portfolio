@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8c9ed41c.css",
-    "main.js": "/portfolio/static/js/main.768feef3.js",
+    "main.js": "/portfolio/static/js/main.024610e4.js",
     "static/media/portfolio.ogg": "/portfolio/static/media/portfolio.34ec47209b3c18c2e6d6.ogg",
     "static/media/dots.ogg": "/portfolio/static/media/dots.bab7b98a9c2c452dbf81.ogg",
     "static/media/carousel.wav": "/portfolio/static/media/carousel.db10ac311309ec5054ea.wav",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.8c9ed41c.css",
-    "static/js/main.768feef3.js"
+    "static/js/main.024610e4.js"
   ]
 }
