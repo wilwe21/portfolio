@@ -78,7 +78,7 @@ function Bell() {
 	return (
 		<div>
 			<TopBar left={Back("/apps")} middle="Bell" />
-			<h1>{hs}:{ms}:{ss}</h1>
+			<h1>{hs ? hs !== 0 : ""}{":" ? hs !== 0 : ""}{ms ? ms !== 0 && hs !== 0 : ""}{":" ? ms !== 0 && ms !== 0 : ""}{ss ? ss !== 0 : ""}</h1>
 			<h2>{ind}</h2>
 		</div>
 	)
