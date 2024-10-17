@@ -17,10 +17,11 @@ function Bell() {
 	const dos = [new Date(y,m,d,8,55,0), new Date(y,m,d,9,40,0)]
 	const tres = [new Date(y,m,d,9,50,0), new Date(y,m,d,10,35,0)]
 	const quad = [new Date(y,m,d,10,45,0), new Date(y,m,d,11,30,0)]
-	const finco = [new Date(y,m,d,12,4,0), new Date(y,m,d,13,25,0)]
-	const sex = [new Date(y,m,d,13,35,0), new Date(y,m,d,14,20,0)]
-	const siete = [new Date(y,m,d,14,25,0), new Date(y,m,d,15,10,0)]
-	const ocho = [new Date(y,m,d,15,15,0), new Date(y,m,d,16,0,0)]
+	const finco = [new Date(y,m,d,11,45,0), new Date(y,m,d,12,30,0)]
+	const sex = [new Date(y,m,d,12,40,0), new Date(y,m,d,13,25,0)]
+	const siete = [new Date(y,m,d,13,35,0), new Date(y,m,d,14,20,0)]
+	const ocho = [new Date(y,m,d,14,25,0), new Date(y,m,d,15,10,0)]
+	const nuewe = [new Date(y,m,d,15,15,0), new Date(y,m,d,16,0,0)]
 	var ds = 0
 	var ind = "Free"
 	if (date < un[0]) {
@@ -70,6 +71,12 @@ function Bell() {
 		ind = "Break"
 	} else if (date < ocho[1]) {
 		ds = ocho[1] - date 
+		ind = "Lesson"
+	} else if (date < nuewe[0]) {
+		ds = nuewe[0] - date 
+		ind = "Break"
+	} else if (date < nuewe[1]) {
+		ds = nuewe[1] - date 
 		ind = "Lesson"
 	}
 	let hs = Math.floor((ds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
