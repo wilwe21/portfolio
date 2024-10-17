@@ -23,54 +23,54 @@ function Bell() {
 	const ocho = [new Date(y,m,d,15,15,0), new Date(y,m,d,16,0,0)]
 	var ds = 0
 	var ind = "Free"
-	if (date < ocho[1]) {
-		ds = ocho[1] - date 
-		ind = "Lesson"
-	} else if (date < ocho[0]) {
-		ds = ocho[0] - date 
-		ind = "Break"
-	} else if (date < siete[1]) {
-		ds = siete[1] - date
-		ind = "Lesson"
-	} else if (date < siete[0]) {
-		ds = siete[0] - date
-		ind = "Break"
-	} else if (date < sex[1]) {
-		ds = sex[1] - date
-		ind = "Lesson"
-	} else if (date < sex[0]) {
-		ds = sex[0] - date
-		ind = "Break"
-	} else if (date < finco[1]) {
-		ds = finco[1] - date
-		ind = "Lesson"
-	} else if (date < finco[0]) {
-		ds = finco[0] - date
-		ind = "Break"
-	} else if (date < quad[1]) {
-		ds = quad[1] - date
-		ind = "Lesson"
-	} else if (date < quad[0]) {
-		ds = quad[0] - date
-		ind = "Break"
-	} else if (date < tres[1]) {
-		ds = tres[1] - date
-		ind = "Lesson"
-	} else if (date < tres[0]) {
-		ds = tres[0] - date
-		ind = "Break"
-	} else if (date < dos[1]) {
-		ds = dos[1] - date
-		ind = "Lesson"
-	} else if (date < dos[0]) {
-		ds = dos[0] - date
+	if (date < un[0]) {
+		ds = un[0] - date
 		ind = "Break"
 	} else if (date < un[1]) {
 		ds = un[1] - date
 		ind = "Lesson"
-	} else if (date < un[0]) {
-		ds = un[0] - date
+	} else if (date < dos[0]) {
+		ds = dos[0] - date
 		ind = "Break"
+	} else if (date < dos[1]) {
+		ds = dos[1] - date
+		ind = "Lesson"
+	} else if (date < tres[0]) {
+		ds = tres[0] - date
+		ind = "Break"
+	} else if (date < tres[1]) {
+		ds = tres[1] - date
+		ind = "Lesson"
+	} else if (date < quad[0]) {
+		ds = quad[0] - date
+		ind = "Break"
+	} else if (date < quad[1]) {
+		ds = quad[1] - date
+		ind = "Lesson"
+	} else if (date < finco[0]) {
+		ds = finco[0] - date
+		ind = "Break"
+	} else if (date < finco[1]) {
+		ds = finco[1] - date
+		ind = "Lesson"
+	} else if (date < sex[0]) {
+		ds = sex[0] - date
+		ind = "Break"
+	} else if (date < sex[1]) {
+		ds = sex[1] - date
+		ind = "Lesson"
+	} else if (date < siete[0]) {
+		ds = siete[0] - date
+		ind = "Break"
+	} else if (date < siete[1]) {
+		ds = siete[1] - date
+		ind = "Lesson"
+	} else if (date < ocho[0]) {
+		ds = ocho[0] - date 
+		ind = "Break"
+	} else if (date < ocho[1]) {
+		ds = ocho[1] - date 
+		ind = "Lesson"
 	}
 	let hs = Math.floor((ds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   	let ms = Math.floor((ds % (1000 * 60 * 60)) / (1000 * 60));
@@ -78,7 +78,7 @@ function Bell() {
 	return (
 		<div>
 			<TopBar left={Back("/apps")} middle="Bell" />
-			<h1>{hs ? hs !== 0 : ""}{":" ? hs !== 0 : ""}{ms ? ms !== 0 && hs !== 0 : ""}{":" ? ms !== 0 && ms !== 0 : ""}{ss ? ss !== 0 : ""}</h1>
+			<h1>{hs > 10 ? hs : `0${hs}`}:{ms > 10 ? ms : `0${ms}`}:{ss > 10 ? ss : `0${ss}`}</h1>
 			<h2>{ind}</h2>
 		</div>
 	)
